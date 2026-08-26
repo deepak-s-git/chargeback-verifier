@@ -1,60 +1,81 @@
+"""FastAPI application wiring.
+
+This module is intentionally thin. The previous version monkey-patched
+``save``/``get`` aliases onto repositories at startup (because the service and
+the repositories disagreed on method names) and held a single shared aiosqlite
+connection open for the whole process. Both are gone: the service and
+repositories now share one vocabulary, and repositories open a short-lived
+connection per operation (see :mod:`database.db`), so the app just constructs
+them.
+
+The LLM client is selected at startup: a real Gemini client when
+``GEMINI_API_KEY`` is present and the SDK initialises, otherwise a deterministic
+mock. Extraction is optional to the pipeline, so the mock is a first-class,
+fully-supported mode — the deterministic engine does all the load-bearing work.
+"""
+
 import contextlib
-from fastapi import FastAPI
+import os
+
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+
 from src.api.routes import cases, demo
 from src.database.migrations import init_db
-from src.database.db import get_db_connection
 from src.database.repositories import (
-    CaseRepository, 
-    EvidenceRepository, 
-    ClaimRepository, 
-    TimelineRepository, 
-    AuditRepository
+    AuditRepository,
+    CaseRepository,
+    ClaimRepository,
+    EvidenceRepository,
+    TimelineRepository,
 )
-from src.orchestrator.case_service import CaseService
 from src.extraction.llm_client import MockLLMClient
+from src.observability.logger import get_logger, setup_logger
+
+logger = get_logger(__name__)
+
+
+def _build_llm_client():
+    """Return a real Gemini client if configured, else a deterministic mock."""
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        logger.info("llm_client_selected", client="MockLLMClient", reason="no GEMINI_API_KEY")
+        return MockLLMClient()
+    try:
+        from src.extraction.llm_client import GeminiClient
+
+        client = GeminiClient(api_key=api_key)
+        logger.info("llm_client_selected", client="GeminiClient", model=client.model)
+        return client
+    except Exception as exc:  # noqa: BLE001 - fall back rather than fail startup
+        logger.warning("gemini_init_failed_falling_back_to_mock", error=str(exc))
+        return MockLLMClient()
+
 
 @contextlib.asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Initialize DB
+    setup_logger()
     await init_db()
-    
-    # Initialize CaseService
-    async with get_db_connection() as db:
-        case_repo = CaseRepository(db)
-        evidence_repo = EvidenceRepository(db)
-        claim_repo = ClaimRepository(db)
-        timeline_repo = TimelineRepository(db)
-        audit_repo = AuditRepository(db)
-        
-        # Patching repo method names if they differ from case_service expectations
-        if not hasattr(case_repo, 'save'):
-            case_repo.save = case_repo.create_case
-        if not hasattr(case_repo, 'get'):
-            case_repo.get = case_repo.get_case
-        if not hasattr(evidence_repo, 'save'):
-            evidence_repo.save = evidence_repo.create_evidence
-        if not hasattr(evidence_repo, 'get_by_case'):
-            evidence_repo.get_by_case = evidence_repo.get_evidence_by_case
-        if not hasattr(claim_repo, 'save'):
-            claim_repo.save = claim_repo.create_claim
-        if not hasattr(timeline_repo, 'save'):
-            timeline_repo.save = timeline_repo.create_event
-        if not hasattr(audit_repo, 'save'):
-            audit_repo.save = audit_repo.log_entry
+    app.state.case_service = _build_case_service()
+    logger.info("app_started")
+    yield
 
-        llm_client = MockLLMClient()
-        app.state.case_service = CaseService(
-            case_repo=case_repo,
-            evidence_repo=evidence_repo,
-            claim_repo=claim_repo,
-            timeline_repo=timeline_repo,
-            audit_repo=audit_repo,
-            llm_client=llm_client
-        )
-        yield
 
-app = FastAPI(title="DisputeShield API", lifespan=lifespan)
+def _build_case_service():
+    from src.orchestrator.case_service import CaseService
+
+    return CaseService(
+        case_repo=CaseRepository(),
+        evidence_repo=EvidenceRepository(),
+        claim_repo=ClaimRepository(),
+        timeline_repo=TimelineRepository(),
+        audit_repo=AuditRepository(),
+        llm_client=_build_llm_client(),
+    )
+
+
+app = FastAPI(title="DisputeShield API", version="1.0.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
@@ -67,7 +88,21 @@ app.add_middleware(
 app.include_router(cases.router, prefix="/api")
 app.include_router(demo.router, prefix="/api")
 
+
+@app.get("/api/health")
+async def health():
+    return {"status": "ok"}
+
+
+@app.exception_handler(ValueError)
+async def value_error_handler(request: Request, exc: ValueError):
+    # Domain-level validation errors are safe to surface as 400s.
+    return JSONResponse(status_code=400, content={"detail": str(exc)})
+
+
 @app.exception_handler(Exception)
-async def generic_exception_handler(request, exc):
-    from fastapi.responses import JSONResponse
-    return JSONResponse(status_code=500, content={"message": str(exc)})
+async def generic_exception_handler(request: Request, exc: Exception):
+    # Log the detail server-side; return a generic message so internals and
+    # any embedded evidence content never leak to the client.
+    logger.error("unhandled_exception", path=str(request.url.path), error=str(exc))
+    return JSONResponse(status_code=500, content={"detail": "Internal server error."})
