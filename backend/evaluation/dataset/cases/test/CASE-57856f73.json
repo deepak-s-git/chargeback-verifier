@@ -1,0 +1,234 @@
+{
+  "id": "CASE-57856f73",
+  "merchant_id": "mer_329f0c69",
+  "transaction_id": "tx_6493feaa20ef",
+  "dispute_id": null,
+  "amount": 12202.0,
+  "currency": "INR",
+  "network": "VISA",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "10.4",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-07-28T05:53:34Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.321434Z",
+  "updated_at": "2026-08-26T10:50:27.321434Z",
+  "evidence_items": [
+    {
+      "id": "EV-4c3a0cfc",
+      "case_id": "CASE-57856f73",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_ce25a2d5f1684a\", \"amount\": 12202, \"currency\": \"INR\", \"method\": \"card\", \"status\": \"captured\"}",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_ce25a2d5f1684a",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "683fd255e09e03d8df3d1fd33ca0cf50cff5aba699d550e12f6fb7581a789705"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "12202",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "683fd255e09e03d8df3d1fd33ca0cf50cff5aba699d550e12f6fb7581a789705"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "683fd255e09e03d8df3d1fd33ca0cf50cff5aba699d550e12f6fb7581a789705"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.321445Z"
+    },
+    {
+      "id": "EV-5b106962",
+      "case_id": "CASE-57856f73",
+      "source_type": "DEVICE_LOG",
+      "semantic_type": "IDENTITY_PROOF",
+      "file_path": null,
+      "raw_content": "device_id=dev_6452e09b08 ip=192.168.1.94",
+      "extracted_facts": [
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.94",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device_log.txt",
+            "source_location": "1",
+            "content_hash": "cd4e316fee589fd215d53e8d1f4e81b785b9046f262a0243c6b60611e873a264"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_6452e09b08",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device_log.txt",
+            "source_location": "1",
+            "content_hash": "cd4e316fee589fd215d53e8d1f4e81b785b9046f262a0243c6b60611e873a264"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.321451Z"
+    },
+    {
+      "id": "EV-3f3a04ee",
+      "case_id": "CASE-57856f73",
+      "source_type": "HISTORICAL_TRANSACTION",
+      "semantic_type": "HISTORICAL_MATCH",
+      "file_path": null,
+      "raw_content": "historical_txn payment_id=old_pay_ce25a2d5f1684a_0 at=2026-02-28T05:53:34+00:00 ip=192.168.1.94 device=dev_6452e09b08 email=customer1452@example.com status=settled",
+      "extracted_facts": [
+        {
+          "type": "TIMESTAMP",
+          "value": "2026-02-28T05:53:34+00:00",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "historical_transaction.txt",
+            "source_location": "1",
+            "content_hash": "018d01c74e7edb533ea99c140891d4351a2d4ffeb8dedab65594ed8db7342afb"
+          }
+        },
+        {
+          "type": "PAYMENT_ID",
+          "value": "old_pay_ce25a2d5f1684a_0",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "historical_transaction.txt",
+            "source_location": "1",
+            "content_hash": "018d01c74e7edb533ea99c140891d4351a2d4ffeb8dedab65594ed8db7342afb"
+          }
+        },
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.94",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "historical_transaction.txt",
+            "source_location": "1",
+            "content_hash": "018d01c74e7edb533ea99c140891d4351a2d4ffeb8dedab65594ed8db7342afb"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_6452e09b08",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "historical_transaction.txt",
+            "source_location": "1",
+            "content_hash": "018d01c74e7edb533ea99c140891d4351a2d4ffeb8dedab65594ed8db7342afb"
+          }
+        },
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer1452@example.com",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "historical_transaction.txt",
+            "source_location": "1",
+            "content_hash": "018d01c74e7edb533ea99c140891d4351a2d4ffeb8dedab65594ed8db7342afb"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.321461Z"
+    },
+    {
+      "id": "EV-a5f7c5d3",
+      "case_id": "CASE-57856f73",
+      "source_type": "HISTORICAL_TRANSACTION",
+      "semantic_type": "HISTORICAL_MATCH",
+      "file_path": null,
+      "raw_content": "historical_txn payment_id=old_pay_ce25a2d5f1684a_1 at=2025-11-20T05:53:34+00:00 ip=192.168.1.94 device=dev_6452e09b08 email=customer1452@example.com status=settled",
+      "extracted_facts": [
+        {
+          "type": "TIMESTAMP",
+          "value": "2025-11-20T05:53:34+00:00",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "historical_transaction.txt",
+            "source_location": "1",
+            "content_hash": "2ae36252650409157aac3ad99a064f414199073b82ea688e6589c5f034e3b284"
+          }
+        },
+        {
+          "type": "PAYMENT_ID",
+          "value": "old_pay_ce25a2d5f1684a_1",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "historical_transaction.txt",
+            "source_location": "1",
+            "content_hash": "2ae36252650409157aac3ad99a064f414199073b82ea688e6589c5f034e3b284"
+          }
+        },
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.94",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "historical_transaction.txt",
+            "source_location": "1",
+            "content_hash": "2ae36252650409157aac3ad99a064f414199073b82ea688e6589c5f034e3b284"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_6452e09b08",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "historical_transaction.txt",
+            "source_location": "1",
+            "content_hash": "2ae36252650409157aac3ad99a064f414199073b82ea688e6589c5f034e3b284"
+          }
+        },
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer1452@example.com",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "historical_transaction.txt",
+            "source_location": "1",
+            "content_hash": "2ae36252650409157aac3ad99a064f414199073b82ea688e6589c5f034e3b284"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.321471Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

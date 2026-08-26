@@ -1,0 +1,179 @@
+{
+  "id": "CASE-3472d9a6",
+  "merchant_id": "mer_2671f0e4",
+  "transaction_id": "tx_dc42fe680614",
+  "dispute_id": null,
+  "amount": 8029.0,
+  "currency": "INR",
+  "network": "MASTERCARD",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "4837",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-03-29T02:06:49Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.419509Z",
+  "updated_at": "2026-08-26T10:50:27.419510Z",
+  "evidence_items": [
+    {
+      "id": "EV-75319667",
+      "case_id": "CASE-3472d9a6",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_ad8969d5e99941\", \"amount\": 8029, \"currency\": \"INR\", \"method\": \"card\", \"status\": \"captured\"}\n~~ scan artifacts: rn cl vv o0 l1 (low-confidence OCR layer) ~~",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_ad8969d5e99941",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "e285f85905711e9774e32fa7caa2e39a605967f24e67116e8a15c0e498648c61"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "8029",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "e285f85905711e9774e32fa7caa2e39a605967f24e67116e8a15c0e498648c61"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "e285f85905711e9774e32fa7caa2e39a605967f24e67116e8a15c0e498648c61"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.419521Z"
+    },
+    {
+      "id": "EV-9dc5506f",
+      "case_id": "CASE-3472d9a6",
+      "source_type": "DEVICE_LOG",
+      "semantic_type": "IDENTITY_PROOF",
+      "file_path": null,
+      "raw_content": "device_id=dev_7cd6746ab7 ip=192.168.1.226\n~~ scan artifacts: rn cl vv o0 l1 (low-confidence OCR layer) ~~",
+      "extracted_facts": [
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.226",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device_log.txt",
+            "source_location": "1",
+            "content_hash": "fcdc98c79fe9864cda144b51d67c48bfb7d4ef4ff4769040b4190e01644fcc20"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_7cd6746ab7",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device_log.txt",
+            "source_location": "1",
+            "content_hash": "fcdc98c79fe9864cda144b51d67c48bfb7d4ef4ff4769040b4190e01644fcc20"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.419527Z"
+    },
+    {
+      "id": "EV-6dcd9b36",
+      "case_id": "CASE-3472d9a6",
+      "source_type": "DOWNLOAD_LOG",
+      "semantic_type": "DELIVERY_PROOF",
+      "file_path": null,
+      "raw_content": "timestamp=2026-03-29T03:06:49+00:00 email=customer6736@example.com account=usr_58176 status=delivered download_count=1\n~~ scan artifacts: rn cl vv o0 l1 (low-confidence OCR layer) ~~",
+      "extracted_facts": [
+        {
+          "type": "TIMESTAMP",
+          "value": "2026-03-29T03:06:49+00:00",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "download_log.txt",
+            "source_location": "1",
+            "content_hash": "e9d2b70944309ae4646168d490202862571b3a544c310528d95de6de3a3efb2f"
+          }
+        },
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer6736@example.com",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "download_log.txt",
+            "source_location": "1",
+            "content_hash": "e9d2b70944309ae4646168d490202862571b3a544c310528d95de6de3a3efb2f"
+          }
+        },
+        {
+          "type": "ACCOUNT_ID",
+          "value": "usr_58176",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "download_log.txt",
+            "source_location": "1",
+            "content_hash": "e9d2b70944309ae4646168d490202862571b3a544c310528d95de6de3a3efb2f"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.419535Z"
+    },
+    {
+      "id": "EV-d2076de5",
+      "case_id": "CASE-3472d9a6",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "[2026-03-30 02:06] Vikram Rao <customer6736@example.com>: I am having trouble with the export feature, can you help me use it?\n~~ scan artifacts: rn cl vv o0 l1 (low-confidence OCR layer) ~~",
+      "extracted_facts": [
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer6736@example.com",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "e6448eb811e631b5b187a860086ee25c805791199f4163528f9c4f2b678601c4"
+          }
+        },
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Vikram Rao",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "e6448eb811e631b5b187a860086ee25c805791199f4163528f9c4f2b678601c4"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.419545Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

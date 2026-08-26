@@ -1,0 +1,134 @@
+{
+  "id": "CASE-96c9bc58",
+  "merchant_id": "mer_e52ccbf7",
+  "transaction_id": "tx_589d92ffaa51",
+  "dispute_id": null,
+  "amount": 23118.0,
+  "currency": "INR",
+  "network": "MASTERCARD",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "4837",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-07-10T03:46:43Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.396765Z",
+  "updated_at": "2026-08-26T10:50:27.396765Z",
+  "evidence_items": [
+    {
+      "id": "EV-282ed64e",
+      "case_id": "CASE-96c9bc58",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_c4c1640df5d346\", \"amount\": 23118, \"currency\": \"INR\", \"method\": \"card\", \"status\": \"captured\"}",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_c4c1640df5d346",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "13a52ae01d9fd31ee8af10df5b598e551bb7b1d46a5d6261e7dd10f3f894da51"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "23118",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "13a52ae01d9fd31ee8af10df5b598e551bb7b1d46a5d6261e7dd10f3f894da51"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "13a52ae01d9fd31ee8af10df5b598e551bb7b1d46a5d6261e7dd10f3f894da51"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.396775Z"
+    },
+    {
+      "id": "EV-9c369675",
+      "case_id": "CASE-96c9bc58",
+      "source_type": "DEVICE_LOG",
+      "semantic_type": "IDENTITY_PROOF",
+      "file_path": null,
+      "raw_content": "device_id=dev_f1b665488e ip=192.168.1.231",
+      "extracted_facts": [
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.231",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device_log.txt",
+            "source_location": "1",
+            "content_hash": "3c209bf70461ef1e9809ae021a4b6a1bcec91f3c977aae9f6ae5241c61d48f6f"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_f1b665488e",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device_log.txt",
+            "source_location": "1",
+            "content_hash": "3c209bf70461ef1e9809ae021a4b6a1bcec91f3c977aae9f6ae5241c61d48f6f"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.396781Z"
+    },
+    {
+      "id": "EV-8eb567b3",
+      "case_id": "CASE-96c9bc58",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "[2026-07-11 03:46] Vikram Rao <customer8316@example.com>: I am having trouble with the export feature, can you help me use it?",
+      "extracted_facts": [
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer8316@example.com",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "711ee64f149962f580f4765933c1aa302be6b94234e7e260f62dfc7bfe37b396"
+          }
+        },
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Vikram Rao",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "711ee64f149962f580f4765933c1aa302be6b94234e7e260f62dfc7bfe37b396"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.396790Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}
