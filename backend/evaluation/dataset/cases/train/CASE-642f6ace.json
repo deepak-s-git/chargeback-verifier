@@ -1,0 +1,187 @@
+{
+  "id": "CASE-642f6ace",
+  "merchant_id": "mer_3e4484a3",
+  "transaction_id": "tx_0a76b0b64e04",
+  "amount": 1467.0,
+  "currency": "INR",
+  "network": "VISA",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "10.4",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "created_at": "2026-08-25T13:26:33.333493",
+  "updated_at": "2026-08-25T13:26:33.333493",
+  "evidence_items": [
+    {
+      "id": "EV-085ed273",
+      "case_id": "CASE-642f6ace",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_45c8b4ef600b47\", \"amount\": 1467, \"currency\": \"INR\", \"method\": \"card\", \"email\": \"customer871@gmail.in\", \"contact\": \"+919876543210\", \"created_at\": 1785344921}",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_45c8b4ef600b47",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "5b84c59ef9b0c4aebca3216b361d9f8a47b09d639cf8d94ff2f1777f8a8f4309"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "1467",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "5b84c59ef9b0c4aebca3216b361d9f8a47b09d639cf8d94ff2f1777f8a8f4309"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "5b84c59ef9b0c4aebca3216b361d9f8a47b09d639cf8d94ff2f1777f8a8f4309"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.333583"
+    },
+    {
+      "id": "EV-964e224f",
+      "case_id": "CASE-642f6ace",
+      "source_type": "HISTORICAL_TRANSACTION",
+      "semantic_type": "HISTORICAL_MATCH",
+      "file_path": null,
+      "raw_content": "historical_tx_0",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "old_pay_0",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "hist_0.txt",
+            "source_location": "root",
+            "content_hash": "99d085b8edf8fe38cb98c69193e8c2749cffc68ba6629bf264b895043f0e08ce"
+          }
+        },
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.247",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "hist_0.txt",
+            "source_location": "root",
+            "content_hash": "99d085b8edf8fe38cb98c69193e8c2749cffc68ba6629bf264b895043f0e08ce"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_61118b63",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "hist_0.txt",
+            "source_location": "root",
+            "content_hash": "99d085b8edf8fe38cb98c69193e8c2749cffc68ba6629bf264b895043f0e08ce"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.333592"
+    },
+    {
+      "id": "EV-26698b68",
+      "case_id": "CASE-642f6ace",
+      "source_type": "HISTORICAL_TRANSACTION",
+      "semantic_type": "HISTORICAL_MATCH",
+      "file_path": null,
+      "raw_content": "historical_tx_1",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "old_pay_1",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "hist_1.txt",
+            "source_location": "root",
+            "content_hash": "e6da29cc72419846b452d12f9a0b743e984a2093d327617f79e04c517bac921a"
+          }
+        },
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.247",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "hist_1.txt",
+            "source_location": "root",
+            "content_hash": "e6da29cc72419846b452d12f9a0b743e984a2093d327617f79e04c517bac921a"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_61118b63",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "hist_1.txt",
+            "source_location": "root",
+            "content_hash": "e6da29cc72419846b452d12f9a0b743e984a2093d327617f79e04c517bac921a"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.333600"
+    },
+    {
+      "id": "EV-65ea1a4a",
+      "case_id": "CASE-642f6ace",
+      "source_type": "DEVICE_LOG",
+      "semantic_type": "IDENTITY_PROOF",
+      "file_path": null,
+      "raw_content": "ip=192.168.1.247, device=dev_61118b63",
+      "extracted_facts": [
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.247",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device.log",
+            "source_location": "root",
+            "content_hash": "7f47e05572335546085ca40d1566b6164a53bab756bf555658808b594018963a"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_61118b63",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device.log",
+            "source_location": "root",
+            "content_hash": "7f47e05572335546085ca40d1566b6164a53bab756bf555658808b594018963a"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.333606"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

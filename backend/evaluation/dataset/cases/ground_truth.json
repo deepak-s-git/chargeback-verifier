@@ -1,0 +1,2602 @@
+{
+  "CASE-4649911a": {
+    "case_id": "CASE-4649911a",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-45e3abcc": {
+    "case_id": "CASE-45e3abcc",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-09c763ac": {
+    "case_id": "CASE-09c763ac",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-193c3ae0": {
+    "case_id": "CASE-193c3ae0",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-77f11458": {
+    "case_id": "CASE-77f11458",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-111a8b72": {
+    "case_id": "CASE-111a8b72",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-2365381b": {
+    "case_id": "CASE-2365381b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-dd239ede": {
+    "case_id": "CASE-dd239ede",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-7f2f2cd3": {
+    "case_id": "CASE-7f2f2cd3",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-82bcc4d6": {
+    "case_id": "CASE-82bcc4d6",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-101d45e0": {
+    "case_id": "CASE-101d45e0",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-239430bc": {
+    "case_id": "CASE-239430bc",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-702f3537": {
+    "case_id": "CASE-702f3537",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-17a74dc0": {
+    "case_id": "CASE-17a74dc0",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-8663d491": {
+    "case_id": "CASE-8663d491",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-63865f88": {
+    "case_id": "CASE-63865f88",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-71489076": {
+    "case_id": "CASE-71489076",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-dac4b492": {
+    "case_id": "CASE-dac4b492",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-190e532d": {
+    "case_id": "CASE-190e532d",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-57f3d17b": {
+    "case_id": "CASE-57f3d17b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-21cbc281": {
+    "case_id": "CASE-21cbc281",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-5c58b4ca": {
+    "case_id": "CASE-5c58b4ca",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-722c6112": {
+    "case_id": "CASE-722c6112",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-809bba06": {
+    "case_id": "CASE-809bba06",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-51ac4f2a": {
+    "case_id": "CASE-51ac4f2a",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-d42c4b6a": {
+    "case_id": "CASE-d42c4b6a",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-474f4e61": {
+    "case_id": "CASE-474f4e61",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-f4b62d34": {
+    "case_id": "CASE-f4b62d34",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-b07353b5": {
+    "case_id": "CASE-b07353b5",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-efff4ee5": {
+    "case_id": "CASE-efff4ee5",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-0fa5c472": {
+    "case_id": "CASE-0fa5c472",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-3f7512d7": {
+    "case_id": "CASE-3f7512d7",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-734b1fd7": {
+    "case_id": "CASE-734b1fd7",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-c29aa6ac": {
+    "case_id": "CASE-c29aa6ac",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-8a62660a": {
+    "case_id": "CASE-8a62660a",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-73c25cda": {
+    "case_id": "CASE-73c25cda",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-f7da9241": {
+    "case_id": "CASE-f7da9241",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-a2fd829a": {
+    "case_id": "CASE-a2fd829a",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-f7a5836c": {
+    "case_id": "CASE-f7a5836c",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-908c414f": {
+    "case_id": "CASE-908c414f",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-e0a118a0": {
+    "case_id": "CASE-e0a118a0",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-21645be9": {
+    "case_id": "CASE-21645be9",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-eeb971dc": {
+    "case_id": "CASE-eeb971dc",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-a64bd87b": {
+    "case_id": "CASE-a64bd87b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-5d94639f": {
+    "case_id": "CASE-5d94639f",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-dd1fe445": {
+    "case_id": "CASE-dd1fe445",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-a2cc655b": {
+    "case_id": "CASE-a2cc655b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-ca4debe2": {
+    "case_id": "CASE-ca4debe2",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-40abf847": {
+    "case_id": "CASE-40abf847",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-6f61f7d7": {
+    "case_id": "CASE-6f61f7d7",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_complete",
+    "notes": "Generated case of type strong_complete"
+  },
+  "CASE-0ecf4b11": {
+    "case_id": "CASE-0ecf4b11",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-09ffa3b3": {
+    "case_id": "CASE-09ffa3b3",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-29de63e3": {
+    "case_id": "CASE-29de63e3",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-c31258a5": {
+    "case_id": "CASE-c31258a5",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-e363b8c3": {
+    "case_id": "CASE-e363b8c3",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-642f6ace": {
+    "case_id": "CASE-642f6ace",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-6fac9534": {
+    "case_id": "CASE-6fac9534",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-de7d4bec": {
+    "case_id": "CASE-de7d4bec",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-17849883": {
+    "case_id": "CASE-17849883",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-d3f7591b": {
+    "case_id": "CASE-d3f7591b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-90d871df": {
+    "case_id": "CASE-90d871df",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-463b5aeb": {
+    "case_id": "CASE-463b5aeb",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-49ae8edb": {
+    "case_id": "CASE-49ae8edb",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-009de9a0": {
+    "case_id": "CASE-009de9a0",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-566673d1": {
+    "case_id": "CASE-566673d1",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-1596e2b8": {
+    "case_id": "CASE-1596e2b8",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-d287f895": {
+    "case_id": "CASE-d287f895",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-45a2e113": {
+    "case_id": "CASE-45a2e113",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-c6808497": {
+    "case_id": "CASE-c6808497",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-d5bc6fee": {
+    "case_id": "CASE-d5bc6fee",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_ce30",
+    "notes": "Generated case of type strong_ce30"
+  },
+  "CASE-95b25af9": {
+    "case_id": "CASE-95b25af9",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-5d596b73": {
+    "case_id": "CASE-5d596b73",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-7970dc1f": {
+    "case_id": "CASE-7970dc1f",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-d3c4224f": {
+    "case_id": "CASE-d3c4224f",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-8bea449b": {
+    "case_id": "CASE-8bea449b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-dce1abcb": {
+    "case_id": "CASE-dce1abcb",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-aa22e986": {
+    "case_id": "CASE-aa22e986",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-584939dd": {
+    "case_id": "CASE-584939dd",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-75f6a23f": {
+    "case_id": "CASE-75f6a23f",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-d553c4a3": {
+    "case_id": "CASE-d553c4a3",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-e7812314": {
+    "case_id": "CASE-e7812314",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-e21890ec": {
+    "case_id": "CASE-e21890ec",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-8fe1ad70": {
+    "case_id": "CASE-8fe1ad70",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-d97adc3c": {
+    "case_id": "CASE-d97adc3c",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-6529ef49": {
+    "case_id": "CASE-6529ef49",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "strong_3ds",
+    "notes": "Generated case of type strong_3ds"
+  },
+  "CASE-52aa4ba7": {
+    "case_id": "CASE-52aa4ba7",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-a4c30e10": {
+    "case_id": "CASE-a4c30e10",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-bb45624b": {
+    "case_id": "CASE-bb45624b",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-a35c2c1c": {
+    "case_id": "CASE-a35c2c1c",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-16e29fb0": {
+    "case_id": "CASE-16e29fb0",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-f361746d": {
+    "case_id": "CASE-f361746d",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-76f8899f": {
+    "case_id": "CASE-76f8899f",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-c2d4eed6": {
+    "case_id": "CASE-c2d4eed6",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-343614ab": {
+    "case_id": "CASE-343614ab",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-454aaa84": {
+    "case_id": "CASE-454aaa84",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-3fefc9dc": {
+    "case_id": "CASE-3fefc9dc",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-e497b906": {
+    "case_id": "CASE-e497b906",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-475e31b4": {
+    "case_id": "CASE-475e31b4",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-778724b9": {
+    "case_id": "CASE-778724b9",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-a34303ce": {
+    "case_id": "CASE-a34303ce",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-4905eafe": {
+    "case_id": "CASE-4905eafe",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-79d7c477": {
+    "case_id": "CASE-79d7c477",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-4aa2976a": {
+    "case_id": "CASE-4aa2976a",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-62547d07": {
+    "case_id": "CASE-62547d07",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-d6c0687d": {
+    "case_id": "CASE-d6c0687d",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-2ae4e290": {
+    "case_id": "CASE-2ae4e290",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-ff8cf740": {
+    "case_id": "CASE-ff8cf740",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-fa466e6d": {
+    "case_id": "CASE-fa466e6d",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-2d2646c8": {
+    "case_id": "CASE-2d2646c8",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-f4e1edda": {
+    "case_id": "CASE-f4e1edda",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-9d4b41fa": {
+    "case_id": "CASE-9d4b41fa",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-de832c0c": {
+    "case_id": "CASE-de832c0c",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-3184f0ab": {
+    "case_id": "CASE-3184f0ab",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-129cbcd2": {
+    "case_id": "CASE-129cbcd2",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-7e56956d": {
+    "case_id": "CASE-7e56956d",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-34450a07": {
+    "case_id": "CASE-34450a07",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-30ea1376": {
+    "case_id": "CASE-30ea1376",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-b6263000": {
+    "case_id": "CASE-b6263000",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-dd3c00fe": {
+    "case_id": "CASE-dd3c00fe",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-ca8ecea6": {
+    "case_id": "CASE-ca8ecea6",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "moderate_gaps",
+    "notes": "Generated case of type moderate_gaps"
+  },
+  "CASE-920bcfa8": {
+    "case_id": "CASE-920bcfa8",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-5c59bcc6": {
+    "case_id": "CASE-5c59bcc6",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-5ab32dbe": {
+    "case_id": "CASE-5ab32dbe",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-a7206d34": {
+    "case_id": "CASE-a7206d34",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-e24c11ad": {
+    "case_id": "CASE-e24c11ad",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-84edcf0f": {
+    "case_id": "CASE-84edcf0f",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-2f34ff62": {
+    "case_id": "CASE-2f34ff62",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-d164ea8f": {
+    "case_id": "CASE-d164ea8f",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-2d02cec8": {
+    "case_id": "CASE-2d02cec8",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-fd301041": {
+    "case_id": "CASE-fd301041",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-346a2d86": {
+    "case_id": "CASE-346a2d86",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-aa9b7dbd": {
+    "case_id": "CASE-aa9b7dbd",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-3e2c3d1d": {
+    "case_id": "CASE-3e2c3d1d",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-89fa4817": {
+    "case_id": "CASE-89fa4817",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-d3fc26a0": {
+    "case_id": "CASE-d3fc26a0",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-ecb3973a": {
+    "case_id": "CASE-ecb3973a",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-2021a648": {
+    "case_id": "CASE-2021a648",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-3ccc81d4": {
+    "case_id": "CASE-3ccc81d4",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-7ae39934": {
+    "case_id": "CASE-7ae39934",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-3353c59c": {
+    "case_id": "CASE-3353c59c",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-fd9ea572": {
+    "case_id": "CASE-fd9ea572",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-526e5fe2": {
+    "case_id": "CASE-526e5fe2",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-7456fadb": {
+    "case_id": "CASE-7456fadb",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-1ae0d429": {
+    "case_id": "CASE-1ae0d429",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-a2696531": {
+    "case_id": "CASE-a2696531",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-41caaa35": {
+    "case_id": "CASE-41caaa35",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-36c21dd2": {
+    "case_id": "CASE-36c21dd2",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-55c62f37": {
+    "case_id": "CASE-55c62f37",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-532f9951": {
+    "case_id": "CASE-532f9951",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-714ef4b9": {
+    "case_id": "CASE-714ef4b9",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "weak_insufficient",
+    "notes": "Generated case of type weak_insufficient"
+  },
+  "CASE-841a951b": {
+    "case_id": "CASE-841a951b",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-6cb5f7bb": {
+    "case_id": "CASE-6cb5f7bb",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-c9e0a7f9": {
+    "case_id": "CASE-c9e0a7f9",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-21492fe6": {
+    "case_id": "CASE-21492fe6",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-6d86b5c2": {
+    "case_id": "CASE-6d86b5c2",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-671571d4": {
+    "case_id": "CASE-671571d4",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-c070053a": {
+    "case_id": "CASE-c070053a",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-1dcf1e86": {
+    "case_id": "CASE-1dcf1e86",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-4b3fabef": {
+    "case_id": "CASE-4b3fabef",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-8b01e577": {
+    "case_id": "CASE-8b01e577",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-d28bcb84": {
+    "case_id": "CASE-d28bcb84",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-9ca2ff31": {
+    "case_id": "CASE-9ca2ff31",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-07b1a87e": {
+    "case_id": "CASE-07b1a87e",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-58461639": {
+    "case_id": "CASE-58461639",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-dee22036": {
+    "case_id": "CASE-dee22036",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "insufficient_minimal",
+    "notes": "Generated case of type insufficient_minimal"
+  },
+  "CASE-841e1e3f": {
+    "case_id": "CASE-841e1e3f",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-c519a389": {
+    "case_id": "CASE-c519a389",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-fbbfe04b": {
+    "case_id": "CASE-fbbfe04b",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-d0cad512": {
+    "case_id": "CASE-d0cad512",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-2b700c5c": {
+    "case_id": "CASE-2b700c5c",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-ae69ccd0": {
+    "case_id": "CASE-ae69ccd0",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-851817df": {
+    "case_id": "CASE-851817df",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-f0f2beca": {
+    "case_id": "CASE-f0f2beca",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-b2a406ac": {
+    "case_id": "CASE-b2a406ac",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-5024f9a7": {
+    "case_id": "CASE-5024f9a7",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-f6c95335": {
+    "case_id": "CASE-f6c95335",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-38e3cb40": {
+    "case_id": "CASE-38e3cb40",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-a301dc81": {
+    "case_id": "CASE-a301dc81",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-edfaa75c": {
+    "case_id": "CASE-edfaa75c",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-8f479b71": {
+    "case_id": "CASE-8f479b71",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-5ff08919": {
+    "case_id": "CASE-5ff08919",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-1236b1d3": {
+    "case_id": "CASE-1236b1d3",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-7d9453c1": {
+    "case_id": "CASE-7d9453c1",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-a29f3a2b": {
+    "case_id": "CASE-a29f3a2b",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-7ec49b5d": {
+    "case_id": "CASE-7ec49b5d",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 1,
+    "has_injection": false,
+    "failure_type": "contradictory",
+    "notes": "Generated case of type contradictory"
+  },
+  "CASE-9579f9cc": {
+    "case_id": "CASE-9579f9cc",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "noisy_ocr",
+    "notes": "Generated case of type noisy_ocr"
+  },
+  "CASE-4f8369a7": {
+    "case_id": "CASE-4f8369a7",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "noisy_ocr",
+    "notes": "Generated case of type noisy_ocr"
+  },
+  "CASE-8a1f81fc": {
+    "case_id": "CASE-8a1f81fc",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "noisy_ocr",
+    "notes": "Generated case of type noisy_ocr"
+  },
+  "CASE-144bb45e": {
+    "case_id": "CASE-144bb45e",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "noisy_ocr",
+    "notes": "Generated case of type noisy_ocr"
+  },
+  "CASE-2dc5a767": {
+    "case_id": "CASE-2dc5a767",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "noisy_ocr",
+    "notes": "Generated case of type noisy_ocr"
+  },
+  "CASE-58c84b33": {
+    "case_id": "CASE-58c84b33",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "noisy_ocr",
+    "notes": "Generated case of type noisy_ocr"
+  },
+  "CASE-1b251486": {
+    "case_id": "CASE-1b251486",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "noisy_ocr",
+    "notes": "Generated case of type noisy_ocr"
+  },
+  "CASE-ee39806d": {
+    "case_id": "CASE-ee39806d",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "noisy_ocr",
+    "notes": "Generated case of type noisy_ocr"
+  },
+  "CASE-50329f4e": {
+    "case_id": "CASE-50329f4e",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "noisy_ocr",
+    "notes": "Generated case of type noisy_ocr"
+  },
+  "CASE-4ca9336b": {
+    "case_id": "CASE-4ca9336b",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "failure_type": "noisy_ocr",
+    "notes": "Generated case of type noisy_ocr"
+  },
+  "CASE-8ba66273": {
+    "case_id": "CASE-8ba66273",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": true,
+    "failure_type": "adversarial_injection",
+    "notes": "Generated case of type adversarial_injection"
+  },
+  "CASE-a3132566": {
+    "case_id": "CASE-a3132566",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": true,
+    "failure_type": "adversarial_injection",
+    "notes": "Generated case of type adversarial_injection"
+  },
+  "CASE-9425d7ac": {
+    "case_id": "CASE-9425d7ac",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": true,
+    "failure_type": "adversarial_injection",
+    "notes": "Generated case of type adversarial_injection"
+  },
+  "CASE-73f5e5b6": {
+    "case_id": "CASE-73f5e5b6",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": true,
+    "failure_type": "adversarial_injection",
+    "notes": "Generated case of type adversarial_injection"
+  },
+  "CASE-cb807963": {
+    "case_id": "CASE-cb807963",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": true,
+    "failure_type": "adversarial_injection",
+    "notes": "Generated case of type adversarial_injection"
+  }
+}

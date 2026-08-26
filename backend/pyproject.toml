@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "disputeshield_backend"
+version = "0.1.0"
+description = "DisputeShield - AI Chargeback Evidence Verifier & Packager"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic>=2.0",
+    "aiosqlite",
+    "google-genai",
+    "python-multipart",
+    "pypdf2",
+    "structlog",
+    "httpx",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]

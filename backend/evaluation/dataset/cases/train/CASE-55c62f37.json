@@ -1,0 +1,63 @@
+{
+  "id": "CASE-55c62f37",
+  "merchant_id": "mer_e5e1f9d4",
+  "transaction_id": "tx_e64c9b06cf63",
+  "amount": 38235.0,
+  "currency": "INR",
+  "network": "MASTERCARD",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "4837",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "created_at": "2026-08-25T13:26:33.337112",
+  "updated_at": "2026-08-25T13:26:33.337112",
+  "evidence_items": [
+    {
+      "id": "EV-bcea9af2",
+      "case_id": "CASE-55c62f37",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_93a7a93d131b46\", \"amount\": 38235, \"currency\": \"INR\", \"method\": \"card\", \"email\": \"customer832@gmail.in\", \"contact\": \"+919876543210\", \"created_at\": 1777673348}",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_93a7a93d131b46",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "b3596d859172d09b00ff36171b5dae24565a66b7de8021cfb6614b0b143dd66d"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "38235",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "b3596d859172d09b00ff36171b5dae24565a66b7de8021cfb6614b0b143dd66d"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "b3596d859172d09b00ff36171b5dae24565a66b7de8021cfb6614b0b143dd66d"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.337125"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

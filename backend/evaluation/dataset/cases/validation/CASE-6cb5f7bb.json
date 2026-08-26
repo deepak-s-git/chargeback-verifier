@@ -1,0 +1,17 @@
+{
+  "id": "CASE-6cb5f7bb",
+  "merchant_id": "mer_ac45fed7",
+  "transaction_id": "tx_12b1a057ec6d",
+  "amount": 33658.0,
+  "currency": "INR",
+  "network": "MASTERCARD",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "4837",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "created_at": "2026-08-25T13:26:33.337196",
+  "updated_at": "2026-08-25T13:26:33.337196",
+  "evidence_items": [],
+  "claims": [],
+  "package": null
+}

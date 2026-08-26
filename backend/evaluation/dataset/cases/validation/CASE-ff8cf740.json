@@ -1,0 +1,142 @@
+{
+  "id": "CASE-ff8cf740",
+  "merchant_id": "mer_a427d379",
+  "transaction_id": "tx_ccb9aa85dbec",
+  "amount": 40838.0,
+  "currency": "INR",
+  "network": "MASTERCARD",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "4837",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "created_at": "2026-08-25T13:26:33.335915",
+  "updated_at": "2026-08-25T13:26:33.335916",
+  "evidence_items": [
+    {
+      "id": "EV-8096941c",
+      "case_id": "CASE-ff8cf740",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_011e29cc79c245\", \"amount\": 40838, \"currency\": \"INR\", \"method\": \"card\", \"email\": \"customer661@gmail.in\", \"contact\": \"+919876543210\", \"created_at\": 1773045188}",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_011e29cc79c245",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "57431ba8b8a6dd2b582c200e6b5c90d3de23517c7bf02cad810c81a15752c0e8"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "40838",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "57431ba8b8a6dd2b582c200e6b5c90d3de23517c7bf02cad810c81a15752c0e8"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "57431ba8b8a6dd2b582c200e6b5c90d3de23517c7bf02cad810c81a15752c0e8"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.335928"
+    },
+    {
+      "id": "EV-14630e53",
+      "case_id": "CASE-ff8cf740",
+      "source_type": "ACCESS_LOG",
+      "semantic_type": "ACCESS_PROOF",
+      "file_path": null,
+      "raw_content": "timestamp,user_id,ip_address,action,resource,user_agent\n2026-03-09T14:08:08,usr_123,192.168.1.113,login,dashboard,Mozilla/5.0\n",
+      "extracted_facts": [
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.113",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access.csv",
+            "source_location": "line 2",
+            "content_hash": "0f583a39e1122e4c9866a2c2cb9e2156d8fdc1c6f2792ee032703d0621ef607e"
+          }
+        },
+        {
+          "type": "TIMESTAMP",
+          "value": "2026-03-09T14:08:08",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access.csv",
+            "source_location": "line 2",
+            "content_hash": "0f583a39e1122e4c9866a2c2cb9e2156d8fdc1c6f2792ee032703d0621ef607e"
+          }
+        },
+        {
+          "type": "ACCOUNT_ID",
+          "value": "usr_123",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access.csv",
+            "source_location": "line 2",
+            "content_hash": "0f583a39e1122e4c9866a2c2cb9e2156d8fdc1c6f2792ee032703d0621ef607e"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.335937"
+    },
+    {
+      "id": "EV-acac259c",
+      "case_id": "CASE-ff8cf740",
+      "source_type": "DEVICE_LOG",
+      "semantic_type": "IDENTITY_PROOF",
+      "file_path": null,
+      "raw_content": "ip=192.168.1.113, device=dev_2e9e5ee0",
+      "extracted_facts": [
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.113",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device.log",
+            "source_location": "root",
+            "content_hash": "2e6eae377791eb7ea888d7bf1068ee19a09a6f53faba25527381bb64d047624d"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_2e9e5ee0",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device.log",
+            "source_location": "root",
+            "content_hash": "2e6eae377791eb7ea888d7bf1068ee19a09a6f53faba25527381bb64d047624d"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.335944"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

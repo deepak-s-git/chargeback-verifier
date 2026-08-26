@@ -1,0 +1,17 @@
+{
+  "id": "CASE-4b3fabef",
+  "merchant_id": "mer_29ca3e96",
+  "transaction_id": "tx_8cbb0ed44918",
+  "amount": 22546.0,
+  "currency": "INR",
+  "network": "VISA",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "10.4",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "created_at": "2026-08-25T13:26:33.337283",
+  "updated_at": "2026-08-25T13:26:33.337283",
+  "evidence_items": [],
+  "claims": [],
+  "package": null
+}

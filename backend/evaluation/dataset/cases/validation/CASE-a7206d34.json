@@ -1,0 +1,63 @@
+{
+  "id": "CASE-a7206d34",
+  "merchant_id": "mer_b1ac9c2c",
+  "transaction_id": "tx_d0a7b09fe92f",
+  "amount": 29327.0,
+  "currency": "INR",
+  "network": "VISA",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "10.4",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "created_at": "2026-08-25T13:26:33.336572",
+  "updated_at": "2026-08-25T13:26:33.336573",
+  "evidence_items": [
+    {
+      "id": "EV-a11c195f",
+      "case_id": "CASE-a7206d34",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_71e5976ce60648\", \"amount\": 29327, \"currency\": \"INR\", \"method\": \"card\", \"email\": \"customer392@gmail.in\", \"contact\": \"+919876543210\", \"created_at\": 1776419761}",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_71e5976ce60648",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "15d7ef2f4302accf582735428e93f30ede273a2336d99b770a7f408b04bd3c44"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "29327",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "15d7ef2f4302accf582735428e93f30ede273a2336d99b770a7f408b04bd3c44"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "15d7ef2f4302accf582735428e93f30ede273a2336d99b770a7f408b04bd3c44"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.336585"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

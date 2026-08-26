@@ -1,0 +1,176 @@
+{
+  "id": "CASE-ae69ccd0",
+  "merchant_id": "mer_6a11df3f",
+  "transaction_id": "tx_d8a28525085d",
+  "amount": 18620.0,
+  "currency": "INR",
+  "network": "MASTERCARD",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "4837",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "created_at": "2026-08-25T13:26:33.337677",
+  "updated_at": "2026-08-25T13:26:33.337678",
+  "evidence_items": [
+    {
+      "id": "EV-f2aa3e27",
+      "case_id": "CASE-ae69ccd0",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_2fcd16a472b245\", \"amount\": 18620, \"currency\": \"INR\", \"method\": \"card\", \"email\": \"customer952@gmail.in\", \"contact\": \"+919876543210\", \"created_at\": 1783452808}",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_2fcd16a472b245",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "1ede5fb57b11ce1eff9f04cbaf1fac6098abd20c7aafb125c9c527493dea68e4"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "18620",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "1ede5fb57b11ce1eff9f04cbaf1fac6098abd20c7aafb125c9c527493dea68e4"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.9,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment.json",
+            "source_location": "root",
+            "content_hash": "1ede5fb57b11ce1eff9f04cbaf1fac6098abd20c7aafb125c9c527493dea68e4"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.337694"
+    },
+    {
+      "id": "EV-875e2ea2",
+      "case_id": "CASE-ae69ccd0",
+      "source_type": "ACCESS_LOG",
+      "semantic_type": "ACCESS_PROOF",
+      "file_path": null,
+      "raw_content": "timestamp,user_id,ip_address,action,resource,user_agent\n2026-07-08T01:08:28,usr_123,10.0.0.5,login,dashboard,Mozilla/5.0\n",
+      "extracted_facts": [
+        {
+          "type": "IP_ADDRESS",
+          "value": "10.0.0.5",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access.csv",
+            "source_location": "line 2",
+            "content_hash": "d3cd2288ab926262fb06725584416c2bcf1f707420ac00a3b5e2ab6c4bd2afb4"
+          }
+        },
+        {
+          "type": "TIMESTAMP",
+          "value": "2026-07-08T01:08:28",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access.csv",
+            "source_location": "line 2",
+            "content_hash": "d3cd2288ab926262fb06725584416c2bcf1f707420ac00a3b5e2ab6c4bd2afb4"
+          }
+        },
+        {
+          "type": "ACCOUNT_ID",
+          "value": "usr_123",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access.csv",
+            "source_location": "line 2",
+            "content_hash": "d3cd2288ab926262fb06725584416c2bcf1f707420ac00a3b5e2ab6c4bd2afb4"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.337704"
+    },
+    {
+      "id": "EV-e9a26822",
+      "case_id": "CASE-ae69ccd0",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "[2026-07-09 01:03] Customer: I never bought this item, please refund.\n",
+      "extracted_facts": [
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Rahul Sharma",
+          "confidence": 0.8,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "chat.txt",
+            "source_location": "line 1",
+            "content_hash": "0304c264ea87092b95de5f22b8e7e91a0d0768755b1d3b36979295334453729a"
+          }
+        },
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer952@gmail.in",
+          "confidence": 0.8,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "chat.txt",
+            "source_location": "line 1",
+            "content_hash": "0304c264ea87092b95de5f22b8e7e91a0d0768755b1d3b36979295334453729a"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.337713"
+    },
+    {
+      "id": "EV-8f98e48c",
+      "case_id": "CASE-ae69ccd0",
+      "source_type": "DEVICE_LOG",
+      "semantic_type": "IDENTITY_PROOF",
+      "file_path": null,
+      "raw_content": "ip=192.168.1.35, device=dev_03a6c5ce",
+      "extracted_facts": [
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.35",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device.log",
+            "source_location": "root",
+            "content_hash": "0676d4062e77c1f9e7aa16f82aa244d56c41719e11682aabd19f6b2bc57ebd55"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_03a6c5ce",
+          "confidence": 0.9,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device.log",
+            "source_location": "root",
+            "content_hash": "0676d4062e77c1f9e7aa16f82aa244d56c41719e11682aabd19f6b2bc57ebd55"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-25T13:26:33.337720"
+    }
+  ],
+  "claims": [],
+  "package": null
+}
