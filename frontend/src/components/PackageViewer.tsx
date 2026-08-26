@@ -1,150 +1,168 @@
-import React, { useEffect, useState } from 'react';
+/**
+ * Package viewer. Lazily fetches the compiled, review-gated evidence package for
+ * a case and presents it the way a reviewer needs it: the disposition, the exact
+ * reasons human review is required, each claim's status (with block reasons for
+ * anything unsupported), and the draft network submission.
+ *
+ * The network submission is emphatically a DRAFT. DisputeShield never transmits
+ * to the card network — it compiles a package for a human to approve — so the
+ * viewer states that plainly and the export is a local file, not a submission.
+ */
+
+import type { Claim } from '../lib/types';
 import { getPackage } from '../lib/api';
+import { useApi } from '../lib/useApi';
+import { claimIntent, recommendationIntent } from '../lib/status';
+import { formatDateTime, titleize } from '../lib/format';
+import { Badge, ErrorState, Loading, Panel, Pill } from './ui';
+import { Ban, CircleCheck, Download, Gavel, Lock, PackageCheck } from 'lucide-react';
 
-import { CheckCircle, AlertTriangle, FileText, Download } from 'lucide-react';
-
-interface Props {
-  caseId: string;
-}
-
-const PackageViewer: React.FC<Props> = ({ caseId }) => {
-  const [data, setData] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    getPackage(caseId)
-      .then(setData)
-      .catch(console.error)
-      .finally(() => setLoading(false));
-  }, [caseId]);
-
-  if (loading) {
-    return <div className="animate-pulse bg-slate-800 h-64 rounded-lg"></div>;
-  }
-
-  if (!data) {
-    return (
-      <div className="bg-slate-800 rounded-lg p-6 border border-slate-700 text-center text-slate-400">
-        <FileText className="w-12 h-12 mx-auto mb-4 opacity-50" />
-        <p>No package generated yet for this case.</p>
-      </div>
-    );
-  }
-
-  // Fallbacks if shape is slightly different
-  const { case_id, claims = [], score = null, timeline = [] } = data;
-
+function ClaimCard({ claim }: { claim: Claim }) {
+  const blocked = claim.status === 'BLOCKED';
   return (
-    <div className="max-w-4xl mx-auto space-y-6">
-      <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl font-bold text-slate-100">Evidence Package</h2>
-        <button className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors text-sm font-medium">
-          <Download className="w-4 h-4" />
-          <span>Export JSON</span>
-        </button>
+    <div className="inset" style={{ padding: 14, borderColor: blocked ? 'var(--crit-bd)' : undefined }}>
+      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12 }}>
+        <div style={{ minWidth: 0 }}>
+          <div style={{ fontSize: 13.5, color: 'var(--ink)', fontWeight: 550 }}>{claim.description}</div>
+          <div className="mono" style={{ fontSize: 11, color: 'var(--faint)', marginTop: 4 }}>{claim.id}</div>
+        </div>
+        <Pill intent={claimIntent(claim.status)} dot>{titleize(claim.status)}</Pill>
       </div>
 
-      <div className="bg-slate-50 text-slate-900 rounded-lg shadow-lg overflow-hidden border border-slate-200">
-        {/* Section 1: Exec Summary */}
-        <div className="p-8 border-b border-slate-200">
-          <div className="flex justify-between items-start mb-6">
-            <div>
-              <h1 className="text-3xl font-bold text-slate-900 mb-2">Dispute Defense Package</h1>
-              <div className="text-slate-500 font-medium">Case: {case_id}</div>
-            </div>
-            {score && (
-              <div className="text-right">
-                <div className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-1">Recommendation</div>
-                <div className={`px-4 py-1 rounded-full font-bold text-sm border inline-block
-                  ${score.recommendation === 'CONTEST' ? 'bg-green-100 text-green-800 border-green-200' : 
-                  'bg-amber-100 text-amber-800 border-amber-200'}`}>
-                  {score.recommendation}
-                </div>
-              </div>
-            )}
-          </div>
+      {claim.block_reason && (
+        <div style={{ display: 'flex', gap: 7, alignItems: 'flex-start', marginTop: 10, color: 'var(--crit)' }}>
+          <Ban size={13} style={{ marginTop: 2, flex: 'none' }} />
+          <span style={{ fontSize: 12.5 }}>{claim.block_reason}</span>
         </div>
+      )}
 
-        {/* Section 2: Identity Verification */}
-        <div className="p-8 border-b border-slate-200">
-          <h2 className="text-xl font-bold mb-4 flex items-center">
-            <CheckCircle className="w-5 h-5 mr-2 text-green-600" />
-            Verified Claims
-          </h2>
-          <div className="space-y-4">
-            {claims.map((claim: any, idx: number) => (
-              <div key={idx} className={`p-4 rounded-md border ${claim.status === 'BLOCKED' ? 'bg-red-50 border-red-200' : 'bg-white border-slate-200'}`}>
-                <div className="flex justify-between items-start">
-                  <div className="flex-1">
-                    <p className={`font-medium ${claim.status === 'BLOCKED' ? 'text-red-900' : 'text-slate-800'}`}>
-                      {claim.description}
-                    </p>
-                    {claim.block_reason && (
-                      <p className="text-sm text-red-600 mt-1 flex items-center">
-                        <AlertTriangle className="w-4 h-4 mr-1" />
-                        {claim.block_reason}
-                      </p>
-                    )}
-                  </div>
-                  <div className="ml-4 flex flex-wrap justify-end gap-1 w-48">
-                    {claim.supporting_evidence_ids?.map((eid: string) => (
-                      <span key={eid} className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800 border border-blue-200">
-                        [{eid}]
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-            {claims.length === 0 && (
-              <p className="text-slate-500 italic">No claims generated.</p>
-            )}
-          </div>
+      {claim.supporting_evidence_ids.length > 0 && (
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center', marginTop: 10 }}>
+          <span className="text-faint" style={{ fontSize: 11 }}>Supported by</span>
+          {claim.supporting_evidence_ids.map((id) => (
+            <Badge key={id} mono>{id}</Badge>
+          ))}
         </div>
-
-        {/* Section 3: Timeline */}
-        <div className="p-8 border-b border-slate-200">
-          <h2 className="text-xl font-bold mb-4">Event Timeline</h2>
-          <div className="overflow-x-auto">
-            <table className="min-w-full text-sm text-left">
-              <thead className="bg-slate-100 text-slate-600 font-semibold border-b border-slate-200">
-                <tr>
-                  <th className="px-4 py-3">Time</th>
-                  <th className="px-4 py-3">Event</th>
-                  <th className="px-4 py-3">Evidence</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-200">
-                {timeline.map((ev: any, idx: number) => (
-                  <tr key={idx} className="bg-white">
-                    <td className="px-4 py-3 font-mono text-xs whitespace-nowrap text-slate-500">
-                      {new Date(ev.timestamp).toLocaleString()}
-                    </td>
-                    <td className="px-4 py-3 text-slate-800">{ev.description}</td>
-                    <td className="px-4 py-3">
-                      <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800 border border-blue-200">
-                        [{ev.evidence_id}]
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-                {timeline.length === 0 && (
-                  <tr>
-                    <td colSpan={3} className="px-4 py-4 text-center text-slate-500 italic">No timeline events found.</td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* Footer */}
-        <div className="bg-slate-800 text-slate-400 p-6 text-xs text-center border-t-4 border-slate-900">
-          <p>Razorpay Dispute API Mapping Ready</p>
-        </div>
-      </div>
+      )}
     </div>
   );
-};
+}
 
-export default PackageViewer;
+export default function PackageViewer({ caseId }: { caseId: string }) {
+  const { data, loading, error, reload } = useApi(() => getPackage(caseId), caseId);
+
+  if (loading) return <Loading label="Compiling package…" />;
+  if (error) return <ErrorState message={error} onRetry={reload} />;
+  if (!data) return null;
+
+  const submission = data.network_submission;
+  const action =
+    submission && typeof submission.action === 'string' ? submission.action : null;
+
+  const verified = data.claims.filter((c) => c.status === 'VERIFIED');
+  const blocked = data.claims.filter((c) => c.status === 'BLOCKED');
+  const other = data.claims.filter((c) => c.status !== 'VERIFIED' && c.status !== 'BLOCKED');
+  const orderedClaims = [...verified, ...blocked, ...other];
+
+  const download = () => {
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${data.case_id}-package.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  };
+
+  return (
+    <div style={{ display: 'grid', gap: 16 }}>
+      <Panel
+        eyebrow="Compiled for human review"
+        title="Evidence package"
+        right={
+          <button className="btn btn--sm" onClick={download}>
+            <Download size={14} /> Export JSON
+          </button>
+        }
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+          {data.recommendation && (
+            <Pill intent={recommendationIntent(data.recommendation)} icon={<PackageCheck size={13} />}>
+              {data.recommendation}
+            </Pill>
+          )}
+          {data.score && (
+            <span className="mono tnum" style={{ fontSize: 13, color: 'var(--muted)' }}>
+              Score {Math.round(data.score.total_score)}/100
+            </span>
+          )}
+          <span className="text-faint" style={{ fontSize: 11.5, marginLeft: 'auto' }}>
+            Generated {formatDateTime(data.generated_at)}
+          </span>
+        </div>
+      </Panel>
+
+      {/* Review gate reasons */}
+      <div className={`banner ${data.review_required ? 'banner--warn' : 'banner--pos'}`}>
+        {data.review_required ? (
+          <Gavel className="banner__icon" size={17} />
+        ) : (
+          <CircleCheck className="banner__icon" size={17} />
+        )}
+        <div>
+          <div className="banner__title">
+            {data.review_required ? 'Human review required before use' : 'No blocking review conditions'}
+          </div>
+          {data.review_reasons.length > 0 ? (
+            <ul style={{ margin: '6px 0 0', paddingLeft: 18 }}>
+              {data.review_reasons.map((r, i) => (
+                <li key={i} className="banner__body" style={{ marginTop: 2 }}>{r}</li>
+              ))}
+            </ul>
+          ) : (
+            <div className="banner__body">
+              This package still requires a human to approve before anything is sent anywhere.
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Claims */}
+      <Panel eyebrow="Assertions in the package" title={`Claims (${data.claims.length})`}>
+        {orderedClaims.length === 0 ? (
+          <div className="text-muted" style={{ fontSize: 13 }}>No claims were compiled for this case.</div>
+        ) : (
+          <div style={{ display: 'grid', gap: 10 }}>
+            {orderedClaims.map((c) => (
+              <ClaimCard key={c.id} claim={c} />
+            ))}
+          </div>
+        )}
+      </Panel>
+
+      {/* Draft network submission */}
+      <Panel
+        eyebrow="Draft output"
+        title="Network submission"
+        right={<Pill intent="neu" icon={<Lock size={13} />}>{action ? titleize(action) : 'Draft'}</Pill>}
+      >
+        <div className="banner banner--neu" style={{ marginBottom: 12 }}>
+          <Lock className="banner__icon" size={16} />
+          <div className="banner__body" style={{ color: 'var(--ink-2)' }}>
+            Draft only — DisputeShield never submits to the card network. This payload is prepared for
+            a human to review and file manually.
+          </div>
+        </div>
+        {submission ? (
+          <pre className="raw scroll">{JSON.stringify(submission, null, 2)}</pre>
+        ) : (
+          <div className="text-muted" style={{ fontSize: 13 }}>
+            No submission draft was generated — the evidence does not support contesting.
+          </div>
+        )}
+      </Panel>
+    </div>
+  );
+}

@@ -1,74 +1,89 @@
-import React, { useState } from 'react';
-import { AlertTriangle, ChevronDown, ChevronRight } from 'lucide-react';
-import type { Contradiction } from '../lib/types';
+/**
+ * Contradiction panel. Renders the deterministic detector's findings verbatim —
+ * type, severity, description and the specific claims/evidence in conflict —
+ * resolving claim ids to their real descriptions (no invented claim text). A
+ * contradiction is a hard stop in this system: its presence forces mandatory
+ * human review, so it is styled as a critical finding, never decoration.
+ */
 
-interface Props {
-  contradictions: Contradiction[];
-}
+import type { Claim, Contradiction } from '../lib/types';
+import { severityIntent } from '../lib/status';
+import { titleize } from '../lib/format';
+import { Badge, Pill } from './ui';
+import { GitCompareArrows, Link2 } from 'lucide-react';
 
-const ContradictionAlert: React.FC<Props> = ({ contradictions }) => {
-  const [expanded, setExpanded] = useState(false);
-
-  if (!contradictions || contradictions.length === 0) return null;
-
-  const highSeverity = contradictions.some(c => c.severity === 'HIGH');
-  const colorClass = highSeverity ? 'border-red-500 bg-red-500/10' : 'border-amber-500 bg-amber-500/10';
-  const textColorClass = highSeverity ? 'text-red-400' : 'text-amber-400';
-  const iconColorClass = highSeverity ? 'text-red-500' : 'text-amber-500';
-
+function ClaimRef({ id, claims }: { id: string; claims: Map<string, Claim> }) {
+  const claim = claims.get(id);
   return (
-    <div className={`border rounded-lg overflow-hidden ${colorClass}`}>
-      <button 
-        onClick={() => setExpanded(!expanded)}
-        className="w-full flex items-center justify-between p-4 focus:outline-none"
-      >
-        <div className="flex items-center space-x-3">
-          <AlertTriangle className={`w-6 h-6 ${iconColorClass}`} />
-          <div className="text-left">
-            <h4 className={`font-semibold ${textColorClass}`}>
-              {contradictions.length} Contradiction{contradictions.length > 1 ? 's' : ''} Detected
-            </h4>
-            {!expanded && (
-              <p className="text-sm text-slate-300 mt-1">{contradictions[0].description}</p>
-            )}
-          </div>
-        </div>
-        {expanded ? <ChevronDown className={textColorClass} /> : <ChevronRight className={textColorClass} />}
-      </button>
-
-      {expanded && (
-        <div className="p-4 border-t border-red-500/20 bg-red-900/10 space-y-4">
-          {contradictions.map((c, idx) => (
-            <div key={c.id || idx} className="bg-slate-900/50 rounded p-4 border border-slate-700/50">
-              <div className="flex justify-between mb-2">
-                <span className={`text-xs font-bold uppercase px-2 py-0.5 rounded ${c.severity === 'HIGH' ? 'bg-red-500/20 text-red-400' : 'bg-amber-500/20 text-amber-400'}`}>
-                  {c.severity} SEVERITY
-                </span>
-                <span className="text-xs text-slate-400 font-mono">ID: {c.id}</span>
-              </div>
-              <p className="text-slate-200 mb-3">{c.description}</p>
-              <div className="flex space-x-4 text-sm">
-                <div className="flex-1 bg-slate-800/80 p-3 rounded border border-slate-700">
-                  <span className="text-xs text-slate-400 block mb-1">Claim A (ID: {c.claim_a_id})</span>
-                  <div className="text-slate-300">Customer claims card was lost on 2026-08-19</div>
-                </div>
-                <div className="flex-1 bg-slate-800/80 p-3 rounded border border-slate-700">
-                  <span className="text-xs text-slate-400 block mb-1">Claim B (ID: {c.claim_b_id})</span>
-                  <div className="text-slate-300">Authentication succeeded with 3D Secure on 2026-08-20 using device fingerprint seen before</div>
-                </div>
-              </div>
-              <div className="mt-3 text-sm">
-                <span className="text-slate-400">Sources: </span>
-                {c.evidence_ids.map(eid => (
-                  <a key={eid} href="#" className="text-blue-400 hover:underline mr-2">{eid}</a>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
+    <div className="inset" style={{ padding: '10px 12px' }}>
+      <div className="mono" style={{ fontSize: 11, color: 'var(--muted)' }}>{id}</div>
+      <div style={{ fontSize: 13, color: 'var(--ink)', marginTop: 3 }}>
+        {claim ? claim.description : <span className="text-faint">Referenced claim</span>}
+      </div>
     </div>
   );
-};
+}
 
-export default ContradictionAlert;
+export default function ContradictionAlert({
+  contradictions,
+  claims,
+}: {
+  contradictions: Contradiction[];
+  claims: Claim[];
+}) {
+  if (contradictions.length === 0) return null;
+  const claimMap = new Map(claims.map((c) => [c.id, c]));
+
+  return (
+    <section className="card" style={{ borderColor: 'var(--crit-bd)' }}>
+      <header className="card__header" style={{ background: 'var(--crit-bg)', borderColor: 'var(--crit-bd)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <GitCompareArrows size={17} style={{ color: 'var(--crit)' }} />
+          <div>
+            <div className="section-title" style={{ color: 'var(--crit)' }}>
+              {contradictions.length} contradiction{contradictions.length === 1 ? '' : 's'} detected
+            </div>
+            <div style={{ fontSize: 12, color: 'var(--crit)' }}>
+              Mandatory human review — the system will not compile a contest while evidence conflicts.
+            </div>
+          </div>
+        </div>
+      </header>
+      <div className="card__body" style={{ display: 'grid', gap: 12 }}>
+        {contradictions.map((c, i) => {
+          const evidenceRefs = [c.evidence_a_id, c.evidence_b_id].filter((x): x is string => !!x);
+          return (
+            <div key={i} className="inset" style={{ padding: 14 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+                <Pill intent={severityIntent(c.severity)} dot>
+                  {c.severity.toUpperCase()}
+                </Pill>
+                <Badge>{titleize(c.type)}</Badge>
+              </div>
+              <div style={{ fontSize: 13.5, color: 'var(--ink)' }}>{c.description}</div>
+
+              {(c.claim_a_id || c.claim_b_id) && (
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 12 }}>
+                  {c.claim_a_id && <ClaimRef id={c.claim_a_id} claims={claimMap} />}
+                  {c.claim_b_id && <ClaimRef id={c.claim_b_id} claims={claimMap} />}
+                </div>
+              )}
+
+              {evidenceRefs.length > 0 && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 12, flexWrap: 'wrap' }}>
+                  <Link2 size={13} style={{ color: 'var(--faint)' }} />
+                  <span className="text-faint" style={{ fontSize: 11.5 }}>Conflicting evidence:</span>
+                  {evidenceRefs.map((eid) => (
+                    <Badge key={eid} mono>
+                      {eid}
+                    </Badge>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}

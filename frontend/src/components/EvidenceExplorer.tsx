@@ -1,116 +1,181 @@
-import React, { useState } from 'react';
-import { FileCode, Mail, FileText, CheckCircle, AlertTriangle } from 'lucide-react';
+/**
+ * Evidence explorer. A master/detail view over the case's ingested evidence:
+ * pick an item on the left, inspect its extracted facts on the right. Every fact
+ * shows how it was extracted (deterministic / regex / OCR / LLM) and its
+ * provenance hash, so an analyst can trace any value back to the source bytes —
+ * the traceability the whole platform is built on. Raw content is shown as-is,
+ * as untrusted text, never interpreted as instructions.
+ */
 
-interface Props {
-  caseId: string;
+import { useState } from 'react';
+import type { EvidenceItem, ExtractionMethod } from '../lib/types';
+import type { Intent } from '../lib/status';
+import { formatDateTime, pct, shortHash, titleize } from '../lib/format';
+import { Badge, EmptyState, Meter } from './ui';
+import { Braces, FileText, Hash, Inbox, MapPin } from 'lucide-react';
+
+const METHOD_INTENT: Record<ExtractionMethod, Intent> = {
+  DETERMINISTIC: 'pos',
+  REGEX: 'neu',
+  OCR: 'neu',
+  LLM: 'warn',
+};
+
+function confidenceIntent(c: number): Intent {
+  if (c >= 0.8) return 'pos';
+  if (c >= 0.5) return 'warn';
+  return 'crit';
 }
 
-const EvidenceExplorer: React.FC<Props> = ({}) => {
-  const [selectedId, setSelectedId] = useState<string>('e1');
-
-  const evidence = [
-    { id: 'e1', type: 'API_LOG', name: 'webhook_payload_auth.json', confidence: 'HIGH', time: '2026-08-25T10:00:00Z', facts: 4 },
-    { id: 'e2', type: 'EMAIL', name: 'customer_support_thread.eml', confidence: 'MEDIUM', time: '2026-08-25T11:20:00Z', facts: 2 },
-    { id: 'e3', type: 'PDF', name: 'invoice_INV-992.pdf', confidence: 'HIGH', time: '2026-08-25T09:05:00Z', facts: 3 },
-  ];
-
-  const getIcon = (type: string) => {
-    switch (type) {
-      case 'API_LOG': return <FileCode className="w-5 h-5 text-blue-400" />;
-      case 'EMAIL': return <Mail className="w-5 h-5 text-purple-400" />;
-      case 'PDF': return <FileText className="w-5 h-5 text-red-400" />;
-      default: return <FileText className="w-5 h-5 text-slate-400" />;
-    }
-  };
-
+function EvidenceDetail({ item }: { item: EvidenceItem }) {
   return (
-    <div className="flex h-full min-h-[600px] border border-slate-700 rounded-lg overflow-hidden bg-slate-800">
-      {/* Left Panel - List */}
-      <div className="w-1/3 border-r border-slate-700 overflow-y-auto">
-        <div className="p-4 border-b border-slate-700 bg-slate-800/80 sticky top-0">
-          <h3 className="font-medium text-slate-200">Evidence Sources</h3>
+    <div className="scroll" style={{ overflowY: 'auto', height: '100%' }}>
+      <div style={{ padding: 18 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+          <span className="mono" style={{ fontSize: 13, fontWeight: 650, color: 'var(--ink)' }}>{item.id}</span>
+          <Badge intent="info">{titleize(item.semantic_type)}</Badge>
+          <Badge>{titleize(item.source_type)}</Badge>
         </div>
-        <div className="divide-y divide-slate-700/50">
-          {evidence.map(item => (
-            <div 
-              key={item.id}
-              onClick={() => setSelectedId(item.id)}
-              className={`p-4 cursor-pointer transition-colors ${selectedId === item.id ? 'bg-blue-900/20 border-l-2 border-blue-500' : 'hover:bg-slate-700/30 border-l-2 border-transparent'}`}
-            >
-              <div className="flex items-start space-x-3">
-                <div className="mt-1">{getIcon(item.type)}</div>
-                <div className="flex-1 min-w-0">
-                  <div className="text-sm font-medium text-slate-200 truncate">{item.name}</div>
-                  <div className="text-xs text-slate-400 mt-1">{new Date(item.time).toLocaleString()}</div>
-                  <div className="flex items-center space-x-2 mt-2">
-                    <span className="text-xs bg-slate-700 text-slate-300 px-2 py-0.5 rounded">{item.facts} facts</span>
-                    {item.confidence === 'HIGH' ? (
-                      <span className="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded flex items-center"><CheckCircle className="w-3 h-3 mr-1"/> High Confidence</span>
-                    ) : (
-                      <span className="text-xs bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded flex items-center"><AlertTriangle className="w-3 h-3 mr-1"/> Med Confidence</span>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Right Panel - Details */}
-      <div className="flex-1 flex flex-col bg-slate-900 overflow-hidden">
-        <div className="p-4 border-b border-slate-700 bg-slate-800 flex justify-between items-center">
-          <h3 className="font-medium text-slate-200">Content & Facts</h3>
-          <button className="text-sm bg-slate-700 hover:bg-slate-600 text-slate-200 px-3 py-1.5 rounded transition-colors">
-            View Raw Source
-          </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginTop: 12, flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span className="eyebrow">Confidence</span>
+            <div style={{ width: 90 }}><Meter value={item.confidence} intent={confidenceIntent(item.confidence)} /></div>
+            <span className="mono tnum" style={{ fontSize: 12, color: 'var(--muted)' }}>{pct(item.confidence)}</span>
+          </div>
+          <span className="text-faint" style={{ fontSize: 11.5 }}>Ingested {formatDateTime(item.created_at)}</span>
         </div>
-        <div className="flex-1 overflow-y-auto p-6 space-y-6">
-          <div>
-            <h4 className="text-sm font-medium text-slate-400 mb-3 uppercase tracking-wider">Extracted Facts</h4>
-            <div className="border border-slate-700 rounded-lg overflow-hidden">
-              <table className="w-full text-sm text-left">
-                <thead className="bg-slate-800 text-slate-300 border-b border-slate-700">
+
+        {item.file_path && (
+          <div className="prov" style={{ marginTop: 12 }}>
+            <FileText size={12} /> {item.file_path}
+          </div>
+        )}
+
+        {/* Extracted facts */}
+        <div style={{ marginTop: 20 }}>
+          <div className="eyebrow" style={{ marginBottom: 8 }}>
+            Extracted facts ({item.extracted_facts.length})
+          </div>
+          {item.extracted_facts.length === 0 ? (
+            <div className="inset" style={{ padding: 14 }}>
+              <span className="text-muted" style={{ fontSize: 13 }}>No facts were extracted from this item.</span>
+            </div>
+          ) : (
+            <div className="inset" style={{ overflow: 'hidden' }}>
+              <table className="dtable">
+                <thead>
                   <tr>
-                    <th className="px-4 py-3 font-medium">Fact Type</th>
-                    <th className="px-4 py-3 font-medium">Value</th>
-                    <th className="px-4 py-3 font-medium">Confidence</th>
+                    <th>Fact</th>
+                    <th>Value</th>
+                    <th>Method</th>
+                    <th>Conf.</th>
+                    <th>Provenance</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-700/50 bg-slate-800/30">
-                  <tr>
-                    <td className="px-4 py-3 text-blue-400 font-mono text-xs">IP_ADDRESS</td>
-                    <td className="px-4 py-3 text-slate-200">192.168.1.45</td>
-                    <td className="px-4 py-3 text-emerald-400">99%</td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-3 text-blue-400 font-mono text-xs">DEVICE_FINGERPRINT</td>
-                    <td className="px-4 py-3 text-slate-200">ios_safari_14_2</td>
-                    <td className="px-4 py-3 text-emerald-400">95%</td>
-                  </tr>
+                <tbody>
+                  {item.extracted_facts.map((f, i) => (
+                    <tr key={i}>
+                      <td style={{ whiteSpace: 'nowrap' }}>{titleize(f.type)}</td>
+                      <td className="mono" style={{ maxWidth: 220, wordBreak: 'break-word' }}>{f.value}</td>
+                      <td><Badge intent={METHOD_INTENT[f.extraction_method]}>{titleize(f.extraction_method)}</Badge></td>
+                      <td className="mono tnum">{pct(f.confidence)}</td>
+                      <td>
+                        <span
+                          className="prov"
+                          title={`${f.provenance.source_file} · ${f.provenance.source_location}\n${f.provenance.content_hash}`}
+                        >
+                          <Hash size={11} /> {shortHash(f.provenance.content_hash, 10)}
+                        </span>
+                        {f.provenance.source_location && (
+                          <div className="text-faint" style={{ fontSize: 10.5, marginTop: 3, display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                            <MapPin size={10} /> {f.provenance.source_location}
+                          </div>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
-          </div>
-
-          <div>
-            <h4 className="text-sm font-medium text-slate-400 mb-3 uppercase tracking-wider">Raw Content Snippet</h4>
-            <pre className="bg-slate-950 p-4 rounded-lg overflow-x-auto text-xs text-slate-300 font-mono border border-slate-800">
-{`{
-  "event": "payment.authorized",
-  "data": {
-    "payment_id": "pay_ABC123",
-    "method": "card",
-    "ip": "192.168.1.45",
-    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X)..."
-  }
-}`}
-            </pre>
-          </div>
+          )}
         </div>
+
+        {/* Raw content — untrusted */}
+        {item.raw_content && (
+          <div style={{ marginTop: 20 }}>
+            <div className="eyebrow" style={{ marginBottom: 8, display: 'flex', alignItems: 'center', gap: 6 }}>
+              <Braces size={12} /> Raw content
+            </div>
+            <pre className="raw scroll">{item.raw_content}</pre>
+          </div>
+        )}
       </div>
     </div>
   );
-};
+}
 
-export default EvidenceExplorer;
+export default function EvidenceExplorer({ evidence }: { evidence: EvidenceItem[] }) {
+  const [selectedId, setSelectedId] = useState<string | null>(evidence[0]?.id ?? null);
+
+  if (evidence.length === 0) {
+    return (
+      <section className="card">
+        <div className="card__body">
+          <EmptyState
+            icon={<Inbox size={26} />}
+            title="No evidence ingested"
+            hint="Add evidence from the case's intake, or load the demo set, then re-run analysis."
+          />
+        </div>
+      </section>
+    );
+  }
+
+  const selected = evidence.find((e) => e.id === selectedId) ?? evidence[0];
+
+  return (
+    <section className="card" style={{ overflow: 'hidden' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '260px 1fr', height: 560 }}>
+        {/* Master list */}
+        <div className="scroll" style={{ overflowY: 'auto', borderRight: '1px solid var(--hair)', background: 'var(--surface-2)' }}>
+          {evidence.map((item) => {
+            const active = item.id === selected.id;
+            return (
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => setSelectedId(item.id)}
+                style={{
+                  display: 'block',
+                  width: '100%',
+                  textAlign: 'left',
+                  padding: '12px 14px',
+                  border: 'none',
+                  borderBottom: '1px solid var(--hair)',
+                  borderLeft: active ? '3px solid var(--brand)' : '3px solid transparent',
+                  background: active ? 'var(--brand-050)' : 'transparent',
+                  cursor: 'pointer',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+                  <span className="mono" style={{ fontSize: 11.5, color: active ? 'var(--brand)' : 'var(--muted)', fontWeight: 600 }}>{item.id}</span>
+                  <span className="mono tnum" style={{ fontSize: 11, color: 'var(--faint)' }}>{pct(item.confidence)}</span>
+                </div>
+                <div style={{ fontSize: 12.5, color: 'var(--ink)', fontWeight: 550, marginTop: 3 }}>
+                  {titleize(item.semantic_type)}
+                </div>
+                <div className="text-faint" style={{ fontSize: 11, marginTop: 2 }}>
+                  {titleize(item.source_type)} · {item.extracted_facts.length} fact{item.extracted_facts.length === 1 ? '' : 's'}
+                </div>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Detail */}
+        <EvidenceDetail item={selected} />
+      </div>
+    </section>
+  );
+}

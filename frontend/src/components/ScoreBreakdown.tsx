@@ -1,109 +1,188 @@
-import React from 'react';
-import { Shield, TrendingUp } from 'lucide-react';
-import type { ScoringFactor } from '../lib/types';
+/**
+ * Score breakdown. Shows the deterministic 0–100 evidence score, the resulting
+ * recommendation and the human-review gate, then every scoring factor with its
+ * signed contribution and the evidence it draws on.
+ *
+ * It deliberately shows ONLY what the engine computes. The previous version
+ * fabricated a "win probability", arbitration fees and an expected value — none
+ * of which the backend produces. Inventing those numbers in the UI is the same
+ * class of error the whole product exists to prevent, so they are gone.
+ */
 
-interface Props {
-  caseId: string;
-}
+import type { EvidenceScore, GateStatus, Recommendation } from '../lib/types';
+import {
+  gateIntent,
+  recommendationIntent,
+  scoreIntent,
+  scoringFactorIntent,
+  type Intent,
+} from '../lib/status';
+import { signedPoints, titleize } from '../lib/format';
+import { Panel, Pill } from './ui';
+import { CircleCheck, CircleDashed, OctagonAlert, Scale, ShieldCheck } from 'lucide-react';
 
-const ScoreBreakdown: React.FC<Props> = ({}) => {
-  const score = 82;
-  const factors: ScoringFactor[] = [
-    { name: '3D Secure Authentication', points: 30, type: 'POSITIVE', evidence_ids: ['e1'] },
-    { name: 'IP matches Billing Zip', points: 15, type: 'POSITIVE', evidence_ids: ['e1'] },
-    { name: 'Digital Delivery Confirmed', points: 20, type: 'POSITIVE', evidence_ids: ['e3'] },
-    { name: 'Prior Undisputed Transaction', points: 25, type: 'POSITIVE', evidence_ids: ['e4'] },
-    { name: 'Terms of Service Missing', points: -5, type: 'MISSING', evidence_ids: [] },
-    { name: 'Timing Anomaly (Immediate Use)', points: -3, type: 'NEGATIVE', evidence_ids: ['e1'] },
-  ];
+const INTENT_COLOR: Record<Intent, string> = {
+  pos: 'var(--pos)',
+  warn: 'var(--warn)',
+  neu: 'var(--neu)',
+  crit: 'var(--crit)',
+  info: 'var(--info)',
+};
 
+const REC_BLURB: Record<Recommendation, string> = {
+  CONTEST: 'Evidence supports contesting this dispute.',
+  REVIEW: 'Mixed signals — a human should review before deciding.',
+  INSUFFICIENT: 'Not enough grounded evidence to contest.',
+  ABSTAIN: 'Insufficient evidence; the system abstains rather than guess.',
+};
+
+function Gauge({ score }: { score: number }) {
+  const clamped = Math.max(0, Math.min(100, score));
+  const R = 54;
+  const C = 2 * Math.PI * R;
+  const offset = C * (1 - clamped / 100);
+  const color = INTENT_COLOR[scoreIntent(clamped)];
   return (
-    <div className="max-w-4xl mx-auto space-y-8">
-      {/* Top Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-slate-800 p-8 rounded-lg border border-slate-700 flex flex-col items-center justify-center text-center">
-          <div className="relative w-48 h-48 flex items-center justify-center mb-4">
-            <svg className="w-full h-full transform -rotate-90 absolute top-0 left-0">
-              <circle cx="96" cy="96" r="88" stroke="currentColor" strokeWidth="12" fill="transparent" className="text-slate-700" />
-              <circle cx="96" cy="96" r="88" stroke="currentColor" strokeWidth="12" fill="transparent" className="text-emerald-500" strokeDasharray="552.9" strokeDashoffset={552.9 - (552.9 * score) / 100} strokeLinecap="round" />
-            </svg>
-            <div className="flex flex-col items-center">
-              <span className="text-6xl font-bold text-emerald-500">{score}</span>
-              <span className="text-slate-400 text-sm mt-1">out of 100</span>
-            </div>
-          </div>
-          <h2 className="text-xl font-bold text-slate-100 mb-2">Recommendation: CONTEST</h2>
-          <p className="text-sm text-slate-400">High likelihood of winning based on compelling evidence matrix.</p>
+    <div style={{ position: 'relative', width: 140, height: 140 }}>
+      <svg width={140} height={140} viewBox="0 0 140 140">
+        <circle cx={70} cy={70} r={R} fill="none" stroke="var(--surface-inset)" strokeWidth={12} />
+        <circle
+          cx={70}
+          cy={70}
+          r={R}
+          fill="none"
+          stroke={color}
+          strokeWidth={12}
+          strokeLinecap="round"
+          strokeDasharray={C}
+          strokeDashoffset={offset}
+          transform="rotate(-90 70 70)"
+          style={{ transition: 'stroke-dashoffset 0.5s ease' }}
+        />
+      </svg>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <div className="mono tnum" style={{ fontSize: 34, fontWeight: 700, color: 'var(--ink)', lineHeight: 1 }}>
+          {Math.round(clamped)}
         </div>
-
-        <div className="space-y-6">
-          <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
-            <h3 className="flex items-center text-slate-200 font-medium mb-4"><TrendingUp className="w-5 h-5 mr-2 text-blue-500"/> Win Probability Calibration</h3>
-            <div className="text-4xl font-bold text-slate-100 mb-2">85%</div>
-            <p className="text-sm text-slate-400">Historical win rate for cases with similar evidence profiles and reason codes.</p>
-          </div>
-
-          <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
-            <h3 className="flex items-center text-slate-200 font-medium mb-4"><Shield className="w-5 h-5 mr-2 text-purple-500"/> Cost/Benefit Analysis</h3>
-            <div className="space-y-3 text-sm">
-              <div className="flex justify-between">
-                <span className="text-slate-400">Dispute Amount:</span>
-                <span className="text-slate-200 font-medium">₹5,000</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-slate-400">Arbitration Fees (if lost):</span>
-                <span className="text-slate-200 font-medium">₹15,000</span>
-              </div>
-              <div className="flex justify-between pt-2 border-t border-slate-700">
-                <span className="text-slate-300 font-medium">Expected Value of Contesting:</span>
-                <span className="text-emerald-400 font-bold">+ ₹3,500</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Factor Breakdown */}
-      <div className="bg-slate-800 rounded-lg border border-slate-700 overflow-hidden">
-        <div className="p-4 border-b border-slate-700 bg-slate-800/80">
-          <h3 className="font-medium text-slate-200">Scoring Factor Breakdown</h3>
-        </div>
-        <div className="p-6 space-y-4">
-          {factors.map((factor, idx) => (
-            <div key={idx} className="flex items-center justify-between">
-              <div className="flex-1 mr-6">
-                <div className="flex justify-between mb-1">
-                  <span className="text-sm font-medium text-slate-200">{factor.name}</span>
-                  <span className={`text-sm font-bold ${factor.points > 0 ? 'text-emerald-400' : 'text-red-400'}`}>
-                    {factor.points > 0 ? '+' : ''}{factor.points}
-                  </span>
-                </div>
-                <div className="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
-                  <div 
-                    className={`h-full rounded-full ${factor.type === 'POSITIVE' ? 'bg-emerald-500' : factor.type === 'NEGATIVE' ? 'bg-red-500' : 'bg-slate-500'}`}
-                    style={{ width: `${Math.min(Math.abs(factor.points) * 2, 100)}%` }}
-                  ></div>
-                </div>
-              </div>
-              <div className="w-24 text-right">
-                {factor.evidence_ids.length > 0 ? (
-                  <div className="flex justify-end gap-1 flex-wrap">
-                    {factor.evidence_ids.map(eid => (
-                      <span key={eid} className="px-1.5 py-0.5 bg-slate-700 text-slate-300 rounded text-[10px] font-mono">
-                        {eid}
-                      </span>
-                    ))}
-                  </div>
-                ) : (
-                  <span className="text-[10px] text-slate-500 uppercase">No Evidence</span>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
+        <div className="eyebrow" style={{ marginTop: 2 }}>/ 100</div>
       </div>
     </div>
   );
-};
+}
 
-export default ScoreBreakdown;
+function FactorIcon({ type }: { type: EvidenceScore['factors'][number]['type'] }) {
+  if (type === 'POSITIVE') return <CircleCheck size={16} style={{ color: 'var(--pos)' }} />;
+  if (type === 'NEGATIVE') return <OctagonAlert size={16} style={{ color: 'var(--crit)' }} />;
+  return <CircleDashed size={16} style={{ color: 'var(--faint)' }} />;
+}
+
+export default function ScoreBreakdown({
+  score,
+  recommendation,
+  gateStatus,
+  gateReasons,
+}: {
+  score: EvidenceScore;
+  recommendation: Recommendation;
+  gateStatus: GateStatus;
+  gateReasons: string[];
+}) {
+  const factors = [...score.factors].sort((a, b) => b.points - a.points);
+
+  return (
+    <div style={{ display: 'grid', gap: 16 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(240px, 320px) 1fr', gap: 16 }}>
+        <Panel eyebrow="Evidence score" title="Strength of defense">
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
+            <Gauge score={score.total_score} />
+            <Pill intent={recommendationIntent(recommendation)} icon={<ShieldCheck size={13} />}>
+              {recommendation}
+            </Pill>
+            <p className="text-muted" style={{ textAlign: 'center', margin: 0, fontSize: 12.5 }}>
+              {REC_BLURB[recommendation]}
+            </p>
+          </div>
+        </Panel>
+
+        <Panel eyebrow="Human-review gate" title="Disposition" right={<Scale size={16} style={{ color: 'var(--faint)' }} />}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <div>
+              <Pill intent={gateIntent(gateStatus)} dot>
+                {titleize(gateStatus)}
+              </Pill>
+            </div>
+            <ul style={{ margin: 0, paddingLeft: 18, display: 'grid', gap: 6 }}>
+              {gateReasons.length > 0 ? (
+                gateReasons.map((r, i) => (
+                  <li key={i} style={{ fontSize: 13, color: 'var(--ink-2)' }}>
+                    {r}
+                  </li>
+                ))
+              ) : (
+                <li className="text-muted" style={{ fontSize: 13 }}>No gate notes.</li>
+              )}
+            </ul>
+            <p className="text-faint" style={{ margin: 0, fontSize: 11.5 }}>
+              DisputeShield never submits to the network — it compiles a draft for a human to sign off.
+            </p>
+          </div>
+        </Panel>
+      </div>
+
+      <Panel eyebrow="Contributions" title={`Scoring factors (${factors.length})`}>
+        {factors.length === 0 ? (
+          <div className="text-muted" style={{ fontSize: 13 }}>No factors contributed to this score.</div>
+        ) : (
+          <div style={{ display: 'grid', gap: 2 }}>
+            {factors.map((f, i) => (
+              <div
+                key={i}
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: '20px 1fr auto',
+                  gap: 12,
+                  alignItems: 'start',
+                  padding: '11px 4px',
+                  borderBottom: i < factors.length - 1 ? '1px solid var(--hair)' : 'none',
+                }}
+              >
+                <div style={{ paddingTop: 1 }}>
+                  <FactorIcon type={f.type} />
+                </div>
+                <div>
+                  <div style={{ fontSize: 13.5, fontWeight: 600, color: 'var(--ink)' }}>{f.name}</div>
+                  <div className="text-muted" style={{ fontSize: 12.5, marginTop: 2 }}>{f.description}</div>
+                  {f.evidence_ids.length > 0 && (
+                    <div className="mono" style={{ fontSize: 11, color: 'var(--faint)', marginTop: 4 }}>
+                      {f.evidence_ids.join(' · ')}
+                    </div>
+                  )}
+                </div>
+                <div
+                  className="mono tnum"
+                  style={{
+                    fontSize: 14,
+                    fontWeight: 700,
+                    color: INTENT_COLOR[scoringFactorIntent(f.type)],
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {signedPoints(f.points)}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </Panel>
+    </div>
+  );
+}
