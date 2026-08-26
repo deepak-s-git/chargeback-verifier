@@ -1,0 +1,44 @@
+{
+  "id": "CASE-aa271a05",
+  "merchant_id": "mer_4fa59d3f",
+  "transaction_id": "tx_92583451969c",
+  "dispute_id": null,
+  "amount": 49145.0,
+  "currency": "INR",
+  "network": "VISA",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "10.4",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-05-31T22:26:30Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.399119Z",
+  "updated_at": "2026-08-26T10:50:27.399120Z",
+  "evidence_items": [
+    {
+      "id": "EV-3f2cf2a2",
+      "case_id": "CASE-aa271a05",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "Internal support note regarding account holder Sara Khan. No further detail on file.",
+      "extracted_facts": [
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Sara Khan",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "056629a1b40e4df701a02a826fe7a7d4e66f08f22435f9de4fa73c7f36a0b10a"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.399127Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}
