@@ -8,6 +8,7 @@ from src.ingestion.parsers.csv_parser import parse_csv
 from src.ingestion.parsers.json_parser import parse_json
 from src.ingestion.parsers.pdf_parser import parse_pdf
 from src.ingestion.parsers.text_parser import parse_text
+from src.verification.classifier import classify_evidence
 
 def ingest_evidence_file(file_path: str, file_content: bytes, mime_type: str, case_id: str) -> List[EvidenceItem]:
     """Ingest a file, parse it, extract entities, and return EvidenceItems.
@@ -58,7 +59,7 @@ def ingest_evidence_file(file_path: str, file_content: bytes, mime_type: str, ca
                     source_location=f"Record {i}",
                     content_hash=content_hash
                 )
-                
+
                 fact = ExtractedFact(
                     type=fact_type,
                     value=value,
@@ -67,17 +68,25 @@ def ingest_evidence_file(file_path: str, file_content: bytes, mime_type: str, ca
                     provenance=provenance
                 )
                 extracted_facts.append(fact)
-        
+
+        # Deterministically classify the evidence's semantic type from its
+        # source, extracted facts, and content — no more USAGE_METRICS default.
+        classification = classify_evidence(
+            source_type=source_type,
+            fact_types={f.type for f in extracted_facts},
+            raw_content=text_content,
+        )
+
         evidence_item = EvidenceItem(
             case_id=case_id,
             source_type=source_type,
-            semantic_type=EvidenceType.USAGE_METRICS,  # Needs classification later
+            semantic_type=classification.semantic_type,
             file_path=file_path,
             raw_content=text_content,
             extracted_facts=extracted_facts,
-            confidence=1.0
+            confidence=round(classification.confidence, 4)
         )
-        
+
         evidence_items.append(evidence_item)
-        
+
     return evidence_items
