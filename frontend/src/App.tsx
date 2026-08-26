@@ -1,182 +1,159 @@
-import { useState, useEffect } from "react";
-import { Shield, FileText, Clock, CheckCircle, Activity, Package, List } from 'lucide-react';
-import type { DisputeCase } from './lib/types';
+/**
+ * DisputeShield shell.
+ *
+ * Owns the case list and selection; delegates everything about a single case to
+ * {@link CaseWorkspace} (mounted with `key`, so switching cases is a clean
+ * remount). The left command rail is the only place with global actions — create
+ * a case, load the demo set — and the case navigation. All data is real: the
+ * list comes from the API, creation posts the exact contract shape, and errors
+ * from creation propagate back to the modal so the user sees them.
+ */
+
+import { useCallback, useEffect, useState } from 'react';
+import { Download, Plus, ShieldCheck } from 'lucide-react';
+import type { CaseCreateRequest, DisputeCase } from './lib/types';
+import { createCase, listCases, loadDemo } from './lib/api';
+import { ApiError } from './lib/api';
 import CaseList from './components/CaseList';
-import CaseDashboard from './components/CaseDashboard';
-import EvidenceExplorer from './components/EvidenceExplorer';
-import Timeline from './components/Timeline';
-import RequirementMatrix from './components/RequirementMatrix';
-import ScoreBreakdown from './components/ScoreBreakdown';
-import PackageViewer from './components/PackageViewer';
-import AuditTrail from './components/AuditTrail';
+import CaseWorkspace from './components/CaseWorkspace';
 import NewCaseModal from './components/NewCaseModal';
-import { listCases, createCase, loadDemo } from './lib/api';
+import { ErrorState, Loading } from './components/ui';
 
-function App() {
-  const [selectedCaseId, setSelectedCaseId] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState('overview');
-  const [isNewCaseModalOpen, setIsNewCaseModalOpen] = useState(false);
+export default function App() {
   const [cases, setCases] = useState<DisputeCase[]>([]);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [listLoading, setListLoading] = useState(true);
+  const [listError, setListError] = useState<string | null>(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [demoLoading, setDemoLoading] = useState(false);
 
-  const fetchCases = async () => {
-    try {
-      const data = await listCases();
-      setCases(data);
-      if (data.length > 0 && !selectedCaseId) {
-        setSelectedCaseId(data[0].id);
-      }
-    } catch (err) {
-      console.error('Failed to fetch cases:', err);
-    }
-  };
-
-  useEffect(() => {
-    fetchCases();
+  const refresh = useCallback(async (): Promise<DisputeCase[]> => {
+    const data = await listCases();
+    setCases(data);
+    return data;
   }, []);
 
-  const handleCreateCase = async (data: any) => {
-    try {
-      const newCase = await createCase({ merchant_id: 'merchant_123', transaction_id: data.payment_id, amount: data.amount, currency: data.currency, card_network: data.card_network, reason_code: data.reason_code, metadata: { dispute_id: data.dispute_id, respond_by: data.respond_by } } as any);
-      await fetchCases();
-      setSelectedCaseId(newCase.id);
-      setIsNewCaseModalOpen(false);
-    } catch (err) {
-      console.error('Failed to create case:', err);
-    }
+  useEffect(() => {
+    // Runs once on mount; initial state is already loading=true / error=null,
+    // so no synchronous setState is needed before the fetch.
+    let cancelled = false;
+    listCases()
+      .then((data) => {
+        if (cancelled) return;
+        setCases(data);
+        setSelectedId((cur) => cur ?? (data[0]?.id ?? null));
+      })
+      .catch((e) => {
+        if (!cancelled) setListError(e instanceof ApiError ? e.message : 'Could not load cases.');
+      })
+      .finally(() => {
+        if (!cancelled) setListLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  // Re-throws on failure so the modal can render the error and stay open.
+  const handleCreateCase = async (req: CaseCreateRequest) => {
+    const created = await createCase(req);
+    await refresh();
+    setSelectedId(created.id);
+    setModalOpen(false);
   };
 
   const handleLoadDemo = async () => {
+    setDemoLoading(true);
+    setListError(null);
     try {
-      await loadDemo();
-      await fetchCases();
-    } catch (err) {
-      console.error('Failed to load demo cases:', err);
+      const res = await loadDemo();
+      const data = await refresh();
+      const firstCreated = res.created_cases[0];
+      setSelectedId(firstCreated ?? data[0]?.id ?? null);
+    } catch (e) {
+      setListError(e instanceof ApiError ? e.message : 'Could not load the demo cases.');
+    } finally {
+      setDemoLoading(false);
     }
   };
 
-  const selectedCase = cases.find(c => c.id === selectedCaseId) || null;
-
-  const tabs = [
-    { id: 'overview', label: 'Overview', icon: Activity },
-    { id: 'evidence', label: 'Evidence', icon: FileText },
-    { id: 'timeline', label: 'Timeline', icon: Clock },
-    { id: 'requirements', label: 'Requirements', icon: CheckCircle },
-    { id: 'score', label: 'Score', icon: Shield },
-    { id: 'package', label: 'Package', icon: Package },
-    { id: 'audit', label: 'Audit', icon: List },
-  ];
-
   return (
-    <div className="flex h-screen bg-slate-900 text-slate-100 overflow-hidden font-sans">
-      {/* Sidebar */}
-      <div className="w-80 flex-shrink-0 border-r border-slate-700 bg-slate-800 flex flex-col">
-        <div className="p-4 border-b border-slate-700 flex items-center space-x-2">
-          <Shield className="w-6 h-6 text-blue-500" />
-          <h1 className="text-xl font-bold tracking-tight">DisputeShield</h1>
+    <div className="app-shell">
+      {/* Command rail */}
+      <aside className="rail">
+        <div className="rail__brand">
+          <span className="rail__mark">
+            <ShieldCheck size={19} />
+          </span>
+          <div>
+            <div className="rail__title">DisputeShield</div>
+            <div className="rail__subtitle">Evidence Intelligence</div>
+          </div>
         </div>
-        <div className="p-4 border-b border-slate-700">
-          <button 
-            onClick={() => setIsNewCaseModalOpen(true)}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
-          >
-            New Case
+
+        <div className="rail__actions">
+          <button className="btn-rail" onClick={() => setModalOpen(true)}>
+            <Plus size={16} /> New case
+          </button>
+          <button className="btn-rail btn-rail--ghost" onClick={handleLoadDemo} disabled={demoLoading}>
+            {demoLoading ? <span className="spinner spinner--rail" /> : <Download size={15} />}
+            Load demo set
           </button>
         </div>
-        <div className="flex-1 overflow-hidden flex flex-col p-2">
-          <CaseList 
-            cases={cases} 
-            selectedId={selectedCaseId} 
-            onSelect={setSelectedCaseId} 
-            onLoadDemo={handleLoadDemo} 
-          />
+
+        <div className="rail__list">
+          <div className="rail-label">Cases{cases.length > 0 ? ` · ${cases.length}` : ''}</div>
+          {listLoading ? (
+            <div style={{ color: 'var(--rail-muted)', display: 'flex', alignItems: 'center', gap: 10, padding: '16px 6px' }}>
+              <span className="spinner spinner--rail" /> Loading cases…
+            </div>
+          ) : listError ? (
+            <div style={{ padding: '8px 6px' }}>
+              <div style={{ color: '#f87171', fontSize: 12.5, lineHeight: 1.5 }}>{listError}</div>
+            </div>
+          ) : (
+            <CaseList cases={cases} selectedId={selectedId} onSelect={setSelectedId} />
+          )}
         </div>
-      </div>
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col min-w-0 bg-slate-900">
-        {selectedCase ? (
-          <>
-            {/* Header */}
-            <div className="p-6 border-b border-slate-700 bg-slate-800/50">
-              <div className="flex justify-between items-start">
-                <div>
-                  <div className="flex items-center space-x-3 mb-2">
-                    <h2 className="text-2xl font-bold">{selectedCase.dispute_id || selectedCase.id.substring(0, 13)}</h2>
-                    <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-500/20 text-blue-400 border border-blue-500/20">
-                      {selectedCase.card_network}
-                    </span>
-                    <span className={`px-2.5 py-0.5 rounded-full text-xs font-medium border uppercase
-                      ${selectedCase.status === 'WON' ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/20' :
-                        selectedCase.status === 'LOST' ? 'bg-red-500/20 text-red-400 border-red-500/20' :
-                        selectedCase.status === 'PACKAGE_READY' ? 'bg-green-500/20 text-green-400 border-green-500/20' :
-                        selectedCase.status === 'READY' ? 'bg-blue-500/20 text-blue-400 border-blue-500/20' :
-                        'bg-slate-500/20 text-slate-400 border-slate-500/20'}`}>
-                      {selectedCase.status.replace('_', ' ')}
-                    </span>
-                  </div>
-                  <div className="text-slate-400 flex items-center space-x-4 text-sm">
-                    <span>Payment: {selectedCase.payment_id || 'N/A'}</span>
-                    <span>Amount: {selectedCase.currency} {selectedCase.amount.toLocaleString()}</span>
-                  </div>
-                </div>
-                <div className="text-right">
-                  <div className="text-sm text-slate-400 mb-1">Deadline</div>
-                  <div className="font-mono text-amber-400 font-medium bg-amber-400/10 px-3 py-1 rounded border border-amber-400/20">
-                    {selectedCase.respond_by ? new Date(selectedCase.respond_by).toLocaleDateString() : 'N/A'}
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="rail__footer">
+          <span style={{ fontSize: 11, color: 'var(--rail-faint)', lineHeight: 1.4 }}>
+            Defense-only · never auto-submits · every claim traced to evidence
+          </span>
+        </div>
+      </aside>
 
-            {/* Tabs */}
-            <div className="border-b border-slate-700 bg-slate-800/30 px-6">
-              <div className="flex space-x-6 overflow-x-auto">
-                {tabs.map((tab) => {
-                  const Icon = tab.icon;
-                  return (
-                    <button
-                      key={tab.id}
-                      onClick={() => setActiveTab(tab.id)}
-                      className={`flex items-center space-x-2 py-4 border-b-2 font-medium text-sm transition-colors whitespace-nowrap ${
-                        activeTab === tab.id
-                          ? 'border-blue-500 text-blue-400'
-                          : 'border-transparent text-slate-400 hover:text-slate-200 hover:border-slate-500'
-                      }`}
-                    >
-                      <Icon className="w-4 h-4" />
-                      <span>{tab.label}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Tab Content */}
-            <div className="flex-1 overflow-y-auto p-6 relative">
-              {activeTab === 'overview' && <CaseDashboard caseId={selectedCase.id} />}
-              {activeTab === 'evidence' && <EvidenceExplorer caseId={selectedCase.id} />}
-              {activeTab === 'timeline' && <Timeline caseId={selectedCase.id} />}
-              {activeTab === 'requirements' && <RequirementMatrix caseId={selectedCase.id} />}
-              {activeTab === 'score' && <ScoreBreakdown caseId={selectedCase.id} />}
-              {activeTab === 'package' && <PackageViewer caseId={selectedCase.id} />}
-              {activeTab === 'audit' && <AuditTrail caseId={selectedCase.id} />}
-            </div>
-          </>
+      {/* Main region */}
+      <main className="main">
+        {selectedId ? (
+          <CaseWorkspace key={selectedId} caseId={selectedId} />
+        ) : listLoading ? (
+          <div style={{ display: 'grid', placeItems: 'center', height: '100%' }}>
+            <Loading label="Loading…" />
+          </div>
+        ) : listError ? (
+          <div style={{ display: 'grid', placeItems: 'center', height: '100%' }}>
+            <ErrorState message={listError} />
+          </div>
         ) : (
-          <div className="flex-1 flex flex-col items-center justify-center text-slate-500">
-            <Shield className="w-16 h-16 mb-4 opacity-20" />
-            <p className="text-lg">Select a case from the sidebar to view details</p>
+          <div style={{ display: 'grid', placeItems: 'center', height: '100%', padding: 32 }}>
+            <div className="empty">
+              <ShieldCheck className="empty__icon" size={40} />
+              <div className="text-ink" style={{ fontWeight: 650, fontSize: 16 }}>No case selected</div>
+              <div className="text-muted" style={{ maxWidth: 420 }}>
+                Create a dispute case or load the five canonical demo cases to see the evidence
+                analysis, requirement coverage and compiled package.
+              </div>
+              <button className="btn btn--primary" onClick={handleLoadDemo} disabled={demoLoading} style={{ marginTop: 8 }}>
+                {demoLoading ? <span className="spinner spinner--rail" /> : <Download size={15} />}
+                Load demo set
+              </button>
+            </div>
           </div>
         )}
-      </div>
+      </main>
 
-      <NewCaseModal 
-        isOpen={isNewCaseModalOpen} 
-        onClose={() => setIsNewCaseModalOpen(false)} 
-        onCreate={handleCreateCase}
-      />
+      <NewCaseModal isOpen={modalOpen} onClose={() => setModalOpen(false)} onCreate={handleCreateCase} />
     </div>
   );
 }
-
-export default App;
