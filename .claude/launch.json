@@ -1,0 +1,25 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "backend",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/deepaks/Desktop/chargeback-verifier/backend && exec ./venv/bin/python -m uvicorn src.api.app:app --host 127.0.0.1 --port 8000 --log-level info"
+      ],
+      "port": 8000,
+      "autoPort": false
+    },
+    {
+      "name": "frontend",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "cd /Users/deepaks/Desktop/chargeback-verifier/frontend && exec ./node_modules/.bin/vite --host 127.0.0.1 --port 5173 --strictPort"
+      ],
+      "port": 5173,
+      "autoPort": false
+    }
+  ]
+}
