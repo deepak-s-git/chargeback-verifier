@@ -1,1111 +1,6 @@
 {
-  "CASE-4649911a": {
-    "case_id": "CASE-4649911a",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-45e3abcc": {
-    "case_id": "CASE-45e3abcc",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-09c763ac": {
-    "case_id": "CASE-09c763ac",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-193c3ae0": {
-    "case_id": "CASE-193c3ae0",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-77f11458": {
-    "case_id": "CASE-77f11458",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-111a8b72": {
-    "case_id": "CASE-111a8b72",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-2365381b": {
-    "case_id": "CASE-2365381b",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-dd239ede": {
-    "case_id": "CASE-dd239ede",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-7f2f2cd3": {
-    "case_id": "CASE-7f2f2cd3",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-82bcc4d6": {
-    "case_id": "CASE-82bcc4d6",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-101d45e0": {
-    "case_id": "CASE-101d45e0",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-239430bc": {
-    "case_id": "CASE-239430bc",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-702f3537": {
-    "case_id": "CASE-702f3537",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-17a74dc0": {
-    "case_id": "CASE-17a74dc0",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-8663d491": {
-    "case_id": "CASE-8663d491",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-63865f88": {
-    "case_id": "CASE-63865f88",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-71489076": {
-    "case_id": "CASE-71489076",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-dac4b492": {
-    "case_id": "CASE-dac4b492",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-190e532d": {
-    "case_id": "CASE-190e532d",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-57f3d17b": {
-    "case_id": "CASE-57f3d17b",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-21cbc281": {
-    "case_id": "CASE-21cbc281",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-5c58b4ca": {
-    "case_id": "CASE-5c58b4ca",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-722c6112": {
-    "case_id": "CASE-722c6112",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-809bba06": {
-    "case_id": "CASE-809bba06",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-51ac4f2a": {
-    "case_id": "CASE-51ac4f2a",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-d42c4b6a": {
-    "case_id": "CASE-d42c4b6a",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-474f4e61": {
-    "case_id": "CASE-474f4e61",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-f4b62d34": {
-    "case_id": "CASE-f4b62d34",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-b07353b5": {
-    "case_id": "CASE-b07353b5",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-efff4ee5": {
-    "case_id": "CASE-efff4ee5",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-0fa5c472": {
-    "case_id": "CASE-0fa5c472",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-3f7512d7": {
-    "case_id": "CASE-3f7512d7",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-734b1fd7": {
-    "case_id": "CASE-734b1fd7",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-c29aa6ac": {
-    "case_id": "CASE-c29aa6ac",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-8a62660a": {
-    "case_id": "CASE-8a62660a",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-73c25cda": {
-    "case_id": "CASE-73c25cda",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-f7da9241": {
-    "case_id": "CASE-f7da9241",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-a2fd829a": {
-    "case_id": "CASE-a2fd829a",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-f7a5836c": {
-    "case_id": "CASE-f7a5836c",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-908c414f": {
-    "case_id": "CASE-908c414f",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-e0a118a0": {
-    "case_id": "CASE-e0a118a0",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-21645be9": {
-    "case_id": "CASE-21645be9",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-eeb971dc": {
-    "case_id": "CASE-eeb971dc",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-a64bd87b": {
-    "case_id": "CASE-a64bd87b",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-5d94639f": {
-    "case_id": "CASE-5d94639f",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-dd1fe445": {
-    "case_id": "CASE-dd1fe445",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-a2cc655b": {
-    "case_id": "CASE-a2cc655b",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-ca4debe2": {
-    "case_id": "CASE-ca4debe2",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-40abf847": {
-    "case_id": "CASE-40abf847",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-6f61f7d7": {
-    "case_id": "CASE-6f61f7d7",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_complete",
-    "notes": "Generated case of type strong_complete"
-  },
-  "CASE-0ecf4b11": {
-    "case_id": "CASE-0ecf4b11",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-09ffa3b3": {
-    "case_id": "CASE-09ffa3b3",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-29de63e3": {
-    "case_id": "CASE-29de63e3",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-c31258a5": {
-    "case_id": "CASE-c31258a5",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-e363b8c3": {
-    "case_id": "CASE-e363b8c3",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-642f6ace": {
-    "case_id": "CASE-642f6ace",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-6fac9534": {
-    "case_id": "CASE-6fac9534",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-de7d4bec": {
-    "case_id": "CASE-de7d4bec",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-17849883": {
-    "case_id": "CASE-17849883",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-d3f7591b": {
-    "case_id": "CASE-d3f7591b",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-90d871df": {
-    "case_id": "CASE-90d871df",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-463b5aeb": {
-    "case_id": "CASE-463b5aeb",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-49ae8edb": {
-    "case_id": "CASE-49ae8edb",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-009de9a0": {
-    "case_id": "CASE-009de9a0",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-566673d1": {
-    "case_id": "CASE-566673d1",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-1596e2b8": {
-    "case_id": "CASE-1596e2b8",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-d287f895": {
-    "case_id": "CASE-d287f895",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-45a2e113": {
-    "case_id": "CASE-45a2e113",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-c6808497": {
-    "case_id": "CASE-c6808497",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-d5bc6fee": {
-    "case_id": "CASE-d5bc6fee",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_ce30",
-    "notes": "Generated case of type strong_ce30"
-  },
-  "CASE-95b25af9": {
-    "case_id": "CASE-95b25af9",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-5d596b73": {
-    "case_id": "CASE-5d596b73",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-7970dc1f": {
-    "case_id": "CASE-7970dc1f",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-d3c4224f": {
-    "case_id": "CASE-d3c4224f",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-8bea449b": {
-    "case_id": "CASE-8bea449b",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-dce1abcb": {
-    "case_id": "CASE-dce1abcb",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-aa22e986": {
-    "case_id": "CASE-aa22e986",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-584939dd": {
-    "case_id": "CASE-584939dd",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-75f6a23f": {
-    "case_id": "CASE-75f6a23f",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-d553c4a3": {
-    "case_id": "CASE-d553c4a3",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-e7812314": {
-    "case_id": "CASE-e7812314",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-e21890ec": {
-    "case_id": "CASE-e21890ec",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-8fe1ad70": {
-    "case_id": "CASE-8fe1ad70",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-d97adc3c": {
-    "case_id": "CASE-d97adc3c",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-6529ef49": {
-    "case_id": "CASE-6529ef49",
-    "expected_recommendation": "CONTEST",
-    "expected_score_range": [
-      75,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "strong_3ds",
-    "notes": "Generated case of type strong_3ds"
-  },
-  "CASE-52aa4ba7": {
-    "case_id": "CASE-52aa4ba7",
+  "CASE-8aa689ef": {
+    "case_id": "CASE-8aa689ef",
     "expected_recommendation": "REVIEW",
     "expected_score_range": [
       50,
@@ -1114,843 +9,43 @@
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
     "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
+    "notes": "moderate_gaps / VISA"
   },
-  "CASE-a4c30e10": {
-    "case_id": "CASE-a4c30e10",
-    "expected_recommendation": "REVIEW",
+  "CASE-766aad8d": {
+    "case_id": "CASE-766aad8d",
+    "expected_recommendation": "CONTEST",
     "expected_score_range": [
-      50,
-      74
+      75,
+      100
     ],
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
   },
-  "CASE-bb45624b": {
-    "case_id": "CASE-bb45624b",
-    "expected_recommendation": "REVIEW",
+  "CASE-8d3f8af2": {
+    "case_id": "CASE-8d3f8af2",
+    "expected_recommendation": "CONTEST",
     "expected_score_range": [
-      50,
-      74
+      75,
+      100
     ],
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
   },
-  "CASE-a35c2c1c": {
-    "case_id": "CASE-a35c2c1c",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-16e29fb0": {
-    "case_id": "CASE-16e29fb0",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-f361746d": {
-    "case_id": "CASE-f361746d",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-76f8899f": {
-    "case_id": "CASE-76f8899f",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-c2d4eed6": {
-    "case_id": "CASE-c2d4eed6",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-343614ab": {
-    "case_id": "CASE-343614ab",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-454aaa84": {
-    "case_id": "CASE-454aaa84",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-3fefc9dc": {
-    "case_id": "CASE-3fefc9dc",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-e497b906": {
-    "case_id": "CASE-e497b906",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-475e31b4": {
-    "case_id": "CASE-475e31b4",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-778724b9": {
-    "case_id": "CASE-778724b9",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-a34303ce": {
-    "case_id": "CASE-a34303ce",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-4905eafe": {
-    "case_id": "CASE-4905eafe",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-79d7c477": {
-    "case_id": "CASE-79d7c477",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-4aa2976a": {
-    "case_id": "CASE-4aa2976a",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-62547d07": {
-    "case_id": "CASE-62547d07",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-d6c0687d": {
-    "case_id": "CASE-d6c0687d",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-2ae4e290": {
-    "case_id": "CASE-2ae4e290",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-ff8cf740": {
-    "case_id": "CASE-ff8cf740",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-fa466e6d": {
-    "case_id": "CASE-fa466e6d",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-2d2646c8": {
-    "case_id": "CASE-2d2646c8",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-f4e1edda": {
-    "case_id": "CASE-f4e1edda",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-9d4b41fa": {
-    "case_id": "CASE-9d4b41fa",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-de832c0c": {
-    "case_id": "CASE-de832c0c",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-3184f0ab": {
-    "case_id": "CASE-3184f0ab",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-129cbcd2": {
-    "case_id": "CASE-129cbcd2",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-7e56956d": {
-    "case_id": "CASE-7e56956d",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-34450a07": {
-    "case_id": "CASE-34450a07",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-30ea1376": {
-    "case_id": "CASE-30ea1376",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-b6263000": {
-    "case_id": "CASE-b6263000",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-dd3c00fe": {
-    "case_id": "CASE-dd3c00fe",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-ca8ecea6": {
-    "case_id": "CASE-ca8ecea6",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "moderate_gaps",
-    "notes": "Generated case of type moderate_gaps"
-  },
-  "CASE-920bcfa8": {
-    "case_id": "CASE-920bcfa8",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-5c59bcc6": {
-    "case_id": "CASE-5c59bcc6",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-5ab32dbe": {
-    "case_id": "CASE-5ab32dbe",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-a7206d34": {
-    "case_id": "CASE-a7206d34",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-e24c11ad": {
-    "case_id": "CASE-e24c11ad",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-84edcf0f": {
-    "case_id": "CASE-84edcf0f",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-2f34ff62": {
-    "case_id": "CASE-2f34ff62",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-d164ea8f": {
-    "case_id": "CASE-d164ea8f",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-2d02cec8": {
-    "case_id": "CASE-2d02cec8",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-fd301041": {
-    "case_id": "CASE-fd301041",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-346a2d86": {
-    "case_id": "CASE-346a2d86",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-aa9b7dbd": {
-    "case_id": "CASE-aa9b7dbd",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-3e2c3d1d": {
-    "case_id": "CASE-3e2c3d1d",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-89fa4817": {
-    "case_id": "CASE-89fa4817",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-d3fc26a0": {
-    "case_id": "CASE-d3fc26a0",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-ecb3973a": {
-    "case_id": "CASE-ecb3973a",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-2021a648": {
-    "case_id": "CASE-2021a648",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-3ccc81d4": {
-    "case_id": "CASE-3ccc81d4",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-7ae39934": {
-    "case_id": "CASE-7ae39934",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-3353c59c": {
-    "case_id": "CASE-3353c59c",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-fd9ea572": {
-    "case_id": "CASE-fd9ea572",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-526e5fe2": {
-    "case_id": "CASE-526e5fe2",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-7456fadb": {
-    "case_id": "CASE-7456fadb",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-1ae0d429": {
-    "case_id": "CASE-1ae0d429",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-a2696531": {
-    "case_id": "CASE-a2696531",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-41caaa35": {
-    "case_id": "CASE-41caaa35",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-36c21dd2": {
-    "case_id": "CASE-36c21dd2",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-55c62f37": {
-    "case_id": "CASE-55c62f37",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-532f9951": {
-    "case_id": "CASE-532f9951",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-714ef4b9": {
-    "case_id": "CASE-714ef4b9",
-    "expected_recommendation": "INSUFFICIENT",
-    "expected_score_range": [
-      25,
-      49
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "weak_insufficient",
-    "notes": "Generated case of type weak_insufficient"
-  },
-  "CASE-841a951b": {
-    "case_id": "CASE-841a951b",
+  "CASE-efe0183f": {
+    "case_id": "CASE-efe0183f",
     "expected_recommendation": "ABSTAIN",
     "expected_score_range": [
       0,
@@ -1959,11 +54,13 @@
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "MASTERCARD",
     "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
+    "notes": "insufficient_minimal / MASTERCARD"
   },
-  "CASE-6cb5f7bb": {
-    "case_id": "CASE-6cb5f7bb",
+  "CASE-3506af84": {
+    "case_id": "CASE-3506af84",
     "expected_recommendation": "ABSTAIN",
     "expected_score_range": [
       0,
@@ -1972,440 +69,13 @@
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "MASTERCARD",
     "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
+    "notes": "insufficient_minimal / MASTERCARD"
   },
-  "CASE-c9e0a7f9": {
-    "case_id": "CASE-c9e0a7f9",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-21492fe6": {
-    "case_id": "CASE-21492fe6",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-6d86b5c2": {
-    "case_id": "CASE-6d86b5c2",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-671571d4": {
-    "case_id": "CASE-671571d4",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-c070053a": {
-    "case_id": "CASE-c070053a",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-1dcf1e86": {
-    "case_id": "CASE-1dcf1e86",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-4b3fabef": {
-    "case_id": "CASE-4b3fabef",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-8b01e577": {
-    "case_id": "CASE-8b01e577",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-d28bcb84": {
-    "case_id": "CASE-d28bcb84",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-9ca2ff31": {
-    "case_id": "CASE-9ca2ff31",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-07b1a87e": {
-    "case_id": "CASE-07b1a87e",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-58461639": {
-    "case_id": "CASE-58461639",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-dee22036": {
-    "case_id": "CASE-dee22036",
-    "expected_recommendation": "ABSTAIN",
-    "expected_score_range": [
-      0,
-      24
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "insufficient_minimal",
-    "notes": "Generated case of type insufficient_minimal"
-  },
-  "CASE-841e1e3f": {
-    "case_id": "CASE-841e1e3f",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-c519a389": {
-    "case_id": "CASE-c519a389",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-fbbfe04b": {
-    "case_id": "CASE-fbbfe04b",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-d0cad512": {
-    "case_id": "CASE-d0cad512",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-2b700c5c": {
-    "case_id": "CASE-2b700c5c",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-ae69ccd0": {
-    "case_id": "CASE-ae69ccd0",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-851817df": {
-    "case_id": "CASE-851817df",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-f0f2beca": {
-    "case_id": "CASE-f0f2beca",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-b2a406ac": {
-    "case_id": "CASE-b2a406ac",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-5024f9a7": {
-    "case_id": "CASE-5024f9a7",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-f6c95335": {
-    "case_id": "CASE-f6c95335",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-38e3cb40": {
-    "case_id": "CASE-38e3cb40",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-a301dc81": {
-    "case_id": "CASE-a301dc81",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-edfaa75c": {
-    "case_id": "CASE-edfaa75c",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-8f479b71": {
-    "case_id": "CASE-8f479b71",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-5ff08919": {
-    "case_id": "CASE-5ff08919",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-1236b1d3": {
-    "case_id": "CASE-1236b1d3",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-7d9453c1": {
-    "case_id": "CASE-7d9453c1",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-a29f3a2b": {
-    "case_id": "CASE-a29f3a2b",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-7ec49b5d": {
-    "case_id": "CASE-7ec49b5d",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      0,
-      100
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 1,
-    "has_injection": false,
-    "failure_type": "contradictory",
-    "notes": "Generated case of type contradictory"
-  },
-  "CASE-9579f9cc": {
-    "case_id": "CASE-9579f9cc",
+  "CASE-6e3837db": {
+    "case_id": "CASE-6e3837db",
     "expected_recommendation": "REVIEW",
     "expected_score_range": [
       50,
@@ -2414,128 +84,253 @@
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-0d40a4a9": {
+    "case_id": "CASE-0d40a4a9",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-b7d52079": {
+    "case_id": "CASE-b7d52079",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-0fcf2d5e": {
+    "case_id": "CASE-0fcf2d5e",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-587dbe8a": {
+    "case_id": "CASE-587dbe8a",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-68670fed": {
+    "case_id": "CASE-68670fed",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-d0efe756": {
+    "case_id": "CASE-d0efe756",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-bbe5ae31": {
+    "case_id": "CASE-bbe5ae31",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-232cd829": {
+    "case_id": "CASE-232cd829",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "MASTERCARD",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / MASTERCARD"
+  },
+  "CASE-394e1e5b": {
+    "case_id": "CASE-394e1e5b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-e05c9a6c": {
+    "case_id": "CASE-e05c9a6c",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "noisy_ocr",
+    "network": "MASTERCARD",
     "failure_type": "noisy_ocr",
-    "notes": "Generated case of type noisy_ocr"
+    "notes": "noisy_ocr / MASTERCARD"
   },
-  "CASE-4f8369a7": {
-    "case_id": "CASE-4f8369a7",
-    "expected_recommendation": "REVIEW",
+  "CASE-09c88e94": {
+    "case_id": "CASE-09c88e94",
+    "expected_recommendation": "INSUFFICIENT",
     "expected_score_range": [
-      50,
-      74
+      25,
+      49
     ],
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
-    "failure_type": "noisy_ocr",
-    "notes": "Generated case of type noisy_ocr"
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
   },
-  "CASE-8a1f81fc": {
-    "case_id": "CASE-8a1f81fc",
-    "expected_recommendation": "REVIEW",
+  "CASE-339181ca": {
+    "case_id": "CASE-339181ca",
+    "expected_recommendation": "CONTEST",
     "expected_score_range": [
-      50,
-      74
+      75,
+      100
     ],
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
-    "failure_type": "noisy_ocr",
-    "notes": "Generated case of type noisy_ocr"
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
   },
-  "CASE-144bb45e": {
-    "case_id": "CASE-144bb45e",
-    "expected_recommendation": "REVIEW",
+  "CASE-baa7ee00": {
+    "case_id": "CASE-baa7ee00",
+    "expected_recommendation": "CONTEST",
     "expected_score_range": [
-      50,
-      74
+      75,
+      100
     ],
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
-    "failure_type": "noisy_ocr",
-    "notes": "Generated case of type noisy_ocr"
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
   },
-  "CASE-2dc5a767": {
-    "case_id": "CASE-2dc5a767",
-    "expected_recommendation": "REVIEW",
+  "CASE-ae985880": {
+    "case_id": "CASE-ae985880",
+    "expected_recommendation": "CONTEST",
     "expected_score_range": [
-      50,
-      74
+      75,
+      100
     ],
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
-    "failure_type": "noisy_ocr",
-    "notes": "Generated case of type noisy_ocr"
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
   },
-  "CASE-58c84b33": {
-    "case_id": "CASE-58c84b33",
-    "expected_recommendation": "REVIEW",
+  "CASE-c112b28a": {
+    "case_id": "CASE-c112b28a",
+    "expected_recommendation": "ABSTAIN",
     "expected_score_range": [
-      50,
-      74
+      0,
+      24
     ],
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
-    "failure_type": "noisy_ocr",
-    "notes": "Generated case of type noisy_ocr"
+    "archetype": "insufficient_minimal",
+    "network": "VISA",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / VISA"
   },
-  "CASE-1b251486": {
-    "case_id": "CASE-1b251486",
-    "expected_recommendation": "REVIEW",
+  "CASE-af7ab0a0": {
+    "case_id": "CASE-af7ab0a0",
+    "expected_recommendation": "ABSTAIN",
     "expected_score_range": [
-      50,
-      74
+      0,
+      24
     ],
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": false,
-    "failure_type": "noisy_ocr",
-    "notes": "Generated case of type noisy_ocr"
+    "archetype": "insufficient_minimal",
+    "network": "VISA",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / VISA"
   },
-  "CASE-ee39806d": {
-    "case_id": "CASE-ee39806d",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "noisy_ocr",
-    "notes": "Generated case of type noisy_ocr"
-  },
-  "CASE-50329f4e": {
-    "case_id": "CASE-50329f4e",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "noisy_ocr",
-    "notes": "Generated case of type noisy_ocr"
-  },
-  "CASE-4ca9336b": {
-    "case_id": "CASE-4ca9336b",
-    "expected_recommendation": "REVIEW",
-    "expected_score_range": [
-      50,
-      74
-    ],
-    "requirement_labels": {},
-    "expected_contradictions": 0,
-    "has_injection": false,
-    "failure_type": "noisy_ocr",
-    "notes": "Generated case of type noisy_ocr"
-  },
-  "CASE-8ba66273": {
-    "case_id": "CASE-8ba66273",
+  "CASE-5f2c407c": {
+    "case_id": "CASE-5f2c407c",
     "expected_recommendation": "REVIEW",
     "expected_score_range": [
       0,
@@ -2544,11 +339,133 @@
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": true,
+    "archetype": "adversarial_injection",
+    "network": "MASTERCARD",
     "failure_type": "adversarial_injection",
-    "notes": "Generated case of type adversarial_injection"
+    "notes": "adversarial_injection / MASTERCARD"
   },
-  "CASE-a3132566": {
-    "case_id": "CASE-a3132566",
+  "CASE-b78aa6f9": {
+    "case_id": "CASE-b78aa6f9",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "VISA",
+    "failure_type": "contradictory",
+    "notes": "contradictory / VISA"
+  },
+  "CASE-18748d97": {
+    "case_id": "CASE-18748d97",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "VISA",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / VISA"
+  },
+  "CASE-6457adba": {
+    "case_id": "CASE-6457adba",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-dfc9dbb8": {
+    "case_id": "CASE-dfc9dbb8",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-70a4ca67": {
+    "case_id": "CASE-70a4ca67",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "MASTERCARD",
+    "failure_type": "contradictory",
+    "notes": "contradictory / MASTERCARD"
+  },
+  "CASE-d0d45f7d": {
+    "case_id": "CASE-d0d45f7d",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "VISA",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / VISA"
+  },
+  "CASE-617c411c": {
+    "case_id": "CASE-617c411c",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-5fc5e2d5": {
+    "case_id": "CASE-5fc5e2d5",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "noisy_ocr",
+    "network": "MASTERCARD",
+    "failure_type": "noisy_ocr",
+    "notes": "noisy_ocr / MASTERCARD"
+  },
+  "CASE-6be3b26a": {
+    "case_id": "CASE-6be3b26a",
     "expected_recommendation": "REVIEW",
     "expected_score_range": [
       0,
@@ -2557,11 +474,748 @@
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": true,
+    "archetype": "adversarial_injection",
+    "network": "VISA",
     "failure_type": "adversarial_injection",
-    "notes": "Generated case of type adversarial_injection"
+    "notes": "adversarial_injection / VISA"
   },
-  "CASE-9425d7ac": {
-    "case_id": "CASE-9425d7ac",
+  "CASE-e20aff29": {
+    "case_id": "CASE-e20aff29",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "MASTERCARD",
+    "failure_type": "contradictory",
+    "notes": "contradictory / MASTERCARD"
+  },
+  "CASE-804988a0": {
+    "case_id": "CASE-804988a0",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "MASTERCARD",
+    "failure_type": "contradictory",
+    "notes": "contradictory / MASTERCARD"
+  },
+  "CASE-f1d08d41": {
+    "case_id": "CASE-f1d08d41",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-23c58d43": {
+    "case_id": "CASE-23c58d43",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "VISA",
+    "failure_type": "contradictory",
+    "notes": "contradictory / VISA"
+  },
+  "CASE-66c7b1ba": {
+    "case_id": "CASE-66c7b1ba",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "VISA",
+    "failure_type": "contradictory",
+    "notes": "contradictory / VISA"
+  },
+  "CASE-c9a2352a": {
+    "case_id": "CASE-c9a2352a",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-c87016b5": {
+    "case_id": "CASE-c87016b5",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-6ca18445": {
+    "case_id": "CASE-6ca18445",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-68caa742": {
+    "case_id": "CASE-68caa742",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "VISA",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / VISA"
+  },
+  "CASE-30293c4f": {
+    "case_id": "CASE-30293c4f",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-e74979c5": {
+    "case_id": "CASE-e74979c5",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "VISA",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / VISA"
+  },
+  "CASE-412f82d9": {
+    "case_id": "CASE-412f82d9",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-997be8f9": {
+    "case_id": "CASE-997be8f9",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-8e3fee75": {
+    "case_id": "CASE-8e3fee75",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-1478c30a": {
+    "case_id": "CASE-1478c30a",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-3ed9e0cf": {
+    "case_id": "CASE-3ed9e0cf",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-41018fc0": {
+    "case_id": "CASE-41018fc0",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "MASTERCARD",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / MASTERCARD"
+  },
+  "CASE-1576133c": {
+    "case_id": "CASE-1576133c",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-b7b1bacc": {
+    "case_id": "CASE-b7b1bacc",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-aa109685": {
+    "case_id": "CASE-aa109685",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-1d0b0ed8": {
+    "case_id": "CASE-1d0b0ed8",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-b0bd5eb1": {
+    "case_id": "CASE-b0bd5eb1",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "VISA",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / VISA"
+  },
+  "CASE-d3049ffa": {
+    "case_id": "CASE-d3049ffa",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "VISA",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / VISA"
+  },
+  "CASE-8a8263d1": {
+    "case_id": "CASE-8a8263d1",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "VISA",
+    "failure_type": "contradictory",
+    "notes": "contradictory / VISA"
+  },
+  "CASE-660b51e0": {
+    "case_id": "CASE-660b51e0",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "VISA",
+    "failure_type": "contradictory",
+    "notes": "contradictory / VISA"
+  },
+  "CASE-0f4ff39a": {
+    "case_id": "CASE-0f4ff39a",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-f76f4aa6": {
+    "case_id": "CASE-f76f4aa6",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-293520fc": {
+    "case_id": "CASE-293520fc",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "VISA",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / VISA"
+  },
+  "CASE-7b72eafb": {
+    "case_id": "CASE-7b72eafb",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "VISA",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / VISA"
+  },
+  "CASE-d0e582bb": {
+    "case_id": "CASE-d0e582bb",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-05034203": {
+    "case_id": "CASE-05034203",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-11120336": {
+    "case_id": "CASE-11120336",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-f803e5a7": {
+    "case_id": "CASE-f803e5a7",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-828438d5": {
+    "case_id": "CASE-828438d5",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-9c300cca": {
+    "case_id": "CASE-9c300cca",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-0b08c15f": {
+    "case_id": "CASE-0b08c15f",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-34e7df27": {
+    "case_id": "CASE-34e7df27",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "VISA",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / VISA"
+  },
+  "CASE-41d1b072": {
+    "case_id": "CASE-41d1b072",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "MASTERCARD",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / MASTERCARD"
+  },
+  "CASE-da649e54": {
+    "case_id": "CASE-da649e54",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "MASTERCARD",
+    "failure_type": "contradictory",
+    "notes": "contradictory / MASTERCARD"
+  },
+  "CASE-c59fffa1": {
+    "case_id": "CASE-c59fffa1",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-f581e06a": {
+    "case_id": "CASE-f581e06a",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-f871dd79": {
+    "case_id": "CASE-f871dd79",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-16beb7ad": {
+    "case_id": "CASE-16beb7ad",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-48c637f9": {
+    "case_id": "CASE-48c637f9",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "MASTERCARD",
+    "failure_type": "contradictory",
+    "notes": "contradictory / MASTERCARD"
+  },
+  "CASE-c722c33b": {
+    "case_id": "CASE-c722c33b",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "MASTERCARD",
+    "failure_type": "contradictory",
+    "notes": "contradictory / MASTERCARD"
+  },
+  "CASE-72937f61": {
+    "case_id": "CASE-72937f61",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "VISA",
+    "failure_type": "contradictory",
+    "notes": "contradictory / VISA"
+  },
+  "CASE-52b8938b": {
+    "case_id": "CASE-52b8938b",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-033fafe6": {
+    "case_id": "CASE-033fafe6",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "VISA",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / VISA"
+  },
+  "CASE-cc3effcc": {
+    "case_id": "CASE-cc3effcc",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-3294f622": {
+    "case_id": "CASE-3294f622",
     "expected_recommendation": "REVIEW",
     "expected_score_range": [
       0,
@@ -2570,11 +1224,28 @@
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": true,
+    "archetype": "adversarial_injection",
+    "network": "MASTERCARD",
     "failure_type": "adversarial_injection",
-    "notes": "Generated case of type adversarial_injection"
+    "notes": "adversarial_injection / MASTERCARD"
   },
-  "CASE-73f5e5b6": {
-    "case_id": "CASE-73f5e5b6",
+  "CASE-a3cf524f": {
+    "case_id": "CASE-a3cf524f",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-e0dd41f2": {
+    "case_id": "CASE-e0dd41f2",
     "expected_recommendation": "REVIEW",
     "expected_score_range": [
       0,
@@ -2583,11 +1254,28 @@
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": true,
+    "archetype": "adversarial_injection",
+    "network": "MASTERCARD",
     "failure_type": "adversarial_injection",
-    "notes": "Generated case of type adversarial_injection"
+    "notes": "adversarial_injection / MASTERCARD"
   },
-  "CASE-cb807963": {
-    "case_id": "CASE-cb807963",
+  "CASE-a3ac3b37": {
+    "case_id": "CASE-a3ac3b37",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-321da114": {
+    "case_id": "CASE-321da114",
     "expected_recommendation": "REVIEW",
     "expected_score_range": [
       0,
@@ -2596,7 +1284,1719 @@
     "requirement_labels": {},
     "expected_contradictions": 0,
     "has_injection": true,
+    "archetype": "adversarial_injection",
+    "network": "VISA",
     "failure_type": "adversarial_injection",
-    "notes": "Generated case of type adversarial_injection"
+    "notes": "adversarial_injection / VISA"
+  },
+  "CASE-4a462c4f": {
+    "case_id": "CASE-4a462c4f",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "noisy_ocr",
+    "network": "MASTERCARD",
+    "failure_type": "noisy_ocr",
+    "notes": "noisy_ocr / MASTERCARD"
+  },
+  "CASE-d0231808": {
+    "case_id": "CASE-d0231808",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-5df7748a": {
+    "case_id": "CASE-5df7748a",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "MASTERCARD",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / MASTERCARD"
+  },
+  "CASE-d9fd0103": {
+    "case_id": "CASE-d9fd0103",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-af9d74c6": {
+    "case_id": "CASE-af9d74c6",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-018499fc": {
+    "case_id": "CASE-018499fc",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-b1e43ca3": {
+    "case_id": "CASE-b1e43ca3",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-0c477995": {
+    "case_id": "CASE-0c477995",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-832f9add": {
+    "case_id": "CASE-832f9add",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "VISA",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / VISA"
+  },
+  "CASE-a952c3d1": {
+    "case_id": "CASE-a952c3d1",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-d024fe3c": {
+    "case_id": "CASE-d024fe3c",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "MASTERCARD",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / MASTERCARD"
+  },
+  "CASE-6dab1bd4": {
+    "case_id": "CASE-6dab1bd4",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "noisy_ocr",
+    "network": "VISA",
+    "failure_type": "noisy_ocr",
+    "notes": "noisy_ocr / VISA"
+  },
+  "CASE-b09083c9": {
+    "case_id": "CASE-b09083c9",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-f069be21": {
+    "case_id": "CASE-f069be21",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-03ccb309": {
+    "case_id": "CASE-03ccb309",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-25c08707": {
+    "case_id": "CASE-25c08707",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "VISA",
+    "failure_type": "contradictory",
+    "notes": "contradictory / VISA"
+  },
+  "CASE-2d90dca2": {
+    "case_id": "CASE-2d90dca2",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-2c43aac5": {
+    "case_id": "CASE-2c43aac5",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-8595ed27": {
+    "case_id": "CASE-8595ed27",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-a29bc890": {
+    "case_id": "CASE-a29bc890",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "noisy_ocr",
+    "network": "VISA",
+    "failure_type": "noisy_ocr",
+    "notes": "noisy_ocr / VISA"
+  },
+  "CASE-b63d8103": {
+    "case_id": "CASE-b63d8103",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "VISA",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / VISA"
+  },
+  "CASE-d4fd764d": {
+    "case_id": "CASE-d4fd764d",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-8aa67e79": {
+    "case_id": "CASE-8aa67e79",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-47ea3c44": {
+    "case_id": "CASE-47ea3c44",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-d90b949a": {
+    "case_id": "CASE-d90b949a",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "noisy_ocr",
+    "network": "VISA",
+    "failure_type": "noisy_ocr",
+    "notes": "noisy_ocr / VISA"
+  },
+  "CASE-bf9ef0aa": {
+    "case_id": "CASE-bf9ef0aa",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-62465659": {
+    "case_id": "CASE-62465659",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-5b63851c": {
+    "case_id": "CASE-5b63851c",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-e2cbd8ae": {
+    "case_id": "CASE-e2cbd8ae",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-6adb884d": {
+    "case_id": "CASE-6adb884d",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "MASTERCARD",
+    "failure_type": "contradictory",
+    "notes": "contradictory / MASTERCARD"
+  },
+  "CASE-1855009a": {
+    "case_id": "CASE-1855009a",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-a937d7ee": {
+    "case_id": "CASE-a937d7ee",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-4d8b8c96": {
+    "case_id": "CASE-4d8b8c96",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-61315331": {
+    "case_id": "CASE-61315331",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "noisy_ocr",
+    "network": "MASTERCARD",
+    "failure_type": "noisy_ocr",
+    "notes": "noisy_ocr / MASTERCARD"
+  },
+  "CASE-4d40fab8": {
+    "case_id": "CASE-4d40fab8",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-a4b8fdeb": {
+    "case_id": "CASE-a4b8fdeb",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "VISA",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / VISA"
+  },
+  "CASE-5ea8a395": {
+    "case_id": "CASE-5ea8a395",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-5688fb1b": {
+    "case_id": "CASE-5688fb1b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-f945836a": {
+    "case_id": "CASE-f945836a",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-608164a6": {
+    "case_id": "CASE-608164a6",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-83645805": {
+    "case_id": "CASE-83645805",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-d4458931": {
+    "case_id": "CASE-d4458931",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "VISA",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / VISA"
+  },
+  "CASE-902abbfd": {
+    "case_id": "CASE-902abbfd",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-c1d35ed4": {
+    "case_id": "CASE-c1d35ed4",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "MASTERCARD",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / MASTERCARD"
+  },
+  "CASE-31685906": {
+    "case_id": "CASE-31685906",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-6499c50f": {
+    "case_id": "CASE-6499c50f",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-419cd2fc": {
+    "case_id": "CASE-419cd2fc",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-61136a57": {
+    "case_id": "CASE-61136a57",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "VISA",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / VISA"
+  },
+  "CASE-885954ca": {
+    "case_id": "CASE-885954ca",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-18c9299c": {
+    "case_id": "CASE-18c9299c",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "VISA",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / VISA"
+  },
+  "CASE-c4a405bb": {
+    "case_id": "CASE-c4a405bb",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-b27fe1ee": {
+    "case_id": "CASE-b27fe1ee",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "VISA",
+    "failure_type": "contradictory",
+    "notes": "contradictory / VISA"
+  },
+  "CASE-0e5b4e4d": {
+    "case_id": "CASE-0e5b4e4d",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "MASTERCARD",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / MASTERCARD"
+  },
+  "CASE-f9112e3d": {
+    "case_id": "CASE-f9112e3d",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-aa271a05": {
+    "case_id": "CASE-aa271a05",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "VISA",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / VISA"
+  },
+  "CASE-12f615ae": {
+    "case_id": "CASE-12f615ae",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-5bfb0975": {
+    "case_id": "CASE-5bfb0975",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-b2c71e9e": {
+    "case_id": "CASE-b2c71e9e",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "MASTERCARD",
+    "failure_type": "contradictory",
+    "notes": "contradictory / MASTERCARD"
+  },
+  "CASE-fe378cac": {
+    "case_id": "CASE-fe378cac",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "noisy_ocr",
+    "network": "VISA",
+    "failure_type": "noisy_ocr",
+    "notes": "noisy_ocr / VISA"
+  },
+  "CASE-490d2221": {
+    "case_id": "CASE-490d2221",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-0dd277ee": {
+    "case_id": "CASE-0dd277ee",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-bf7fe10c": {
+    "case_id": "CASE-bf7fe10c",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-be11434b": {
+    "case_id": "CASE-be11434b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-c899129e": {
+    "case_id": "CASE-c899129e",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "VISA",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / VISA"
+  },
+  "CASE-f4d60899": {
+    "case_id": "CASE-f4d60899",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "VISA",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / VISA"
+  },
+  "CASE-8c30788e": {
+    "case_id": "CASE-8c30788e",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-8a2bff57": {
+    "case_id": "CASE-8a2bff57",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-ac4b4d97": {
+    "case_id": "CASE-ac4b4d97",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-b80d22f5": {
+    "case_id": "CASE-b80d22f5",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-7eb43308": {
+    "case_id": "CASE-7eb43308",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-0099f9d8": {
+    "case_id": "CASE-0099f9d8",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "VISA",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / VISA"
+  },
+  "CASE-4dad854b": {
+    "case_id": "CASE-4dad854b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "VISA",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / VISA"
+  },
+  "CASE-35c10449": {
+    "case_id": "CASE-35c10449",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "MASTERCARD",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / MASTERCARD"
+  },
+  "CASE-77dbd873": {
+    "case_id": "CASE-77dbd873",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-0598e057": {
+    "case_id": "CASE-0598e057",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "VISA",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / VISA"
+  },
+  "CASE-855a3af9": {
+    "case_id": "CASE-855a3af9",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-e28e9702": {
+    "case_id": "CASE-e28e9702",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-43043e5b": {
+    "case_id": "CASE-43043e5b",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "VISA",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / VISA"
+  },
+  "CASE-53b4af8c": {
+    "case_id": "CASE-53b4af8c",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "MASTERCARD",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / MASTERCARD"
+  },
+  "CASE-2ad7dc1b": {
+    "case_id": "CASE-2ad7dc1b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-3472d9a6": {
+    "case_id": "CASE-3472d9a6",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "noisy_ocr",
+    "network": "MASTERCARD",
+    "failure_type": "noisy_ocr",
+    "notes": "noisy_ocr / MASTERCARD"
+  },
+  "CASE-fbe1eb1d": {
+    "case_id": "CASE-fbe1eb1d",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-860781b6": {
+    "case_id": "CASE-860781b6",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "VISA",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / VISA"
+  },
+  "CASE-b84cd1fb": {
+    "case_id": "CASE-b84cd1fb",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-d2781a8b": {
+    "case_id": "CASE-d2781a8b",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-e7363f12": {
+    "case_id": "CASE-e7363f12",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-f4ab8626": {
+    "case_id": "CASE-f4ab8626",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "VISA",
+    "failure_type": "contradictory",
+    "notes": "contradictory / VISA"
+  },
+  "CASE-a67baec5": {
+    "case_id": "CASE-a67baec5",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-57856f73": {
+    "case_id": "CASE-57856f73",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-70fe4ea8": {
+    "case_id": "CASE-70fe4ea8",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-a6320e5d": {
+    "case_id": "CASE-a6320e5d",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "VISA",
+    "failure_type": "contradictory",
+    "notes": "contradictory / VISA"
+  },
+  "CASE-ae23da48": {
+    "case_id": "CASE-ae23da48",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "MASTERCARD",
+    "failure_type": "contradictory",
+    "notes": "contradictory / MASTERCARD"
+  },
+  "CASE-5250c03d": {
+    "case_id": "CASE-5250c03d",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-fe5efbaf": {
+    "case_id": "CASE-fe5efbaf",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-5a7f0f50": {
+    "case_id": "CASE-5a7f0f50",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      0,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 2,
+    "has_injection": false,
+    "archetype": "contradictory",
+    "network": "MASTERCARD",
+    "failure_type": "contradictory",
+    "notes": "contradictory / MASTERCARD"
+  },
+  "CASE-96c9bc58": {
+    "case_id": "CASE-96c9bc58",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-123255f7": {
+    "case_id": "CASE-123255f7",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "MASTERCARD",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / MASTERCARD"
+  },
+  "CASE-f55b10da": {
+    "case_id": "CASE-f55b10da",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "VISA",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / VISA"
+  },
+  "CASE-8001fdeb": {
+    "case_id": "CASE-8001fdeb",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "VISA",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / VISA"
+  },
+  "CASE-b6932a34": {
+    "case_id": "CASE-b6932a34",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-a3b5dd6c": {
+    "case_id": "CASE-a3b5dd6c",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-de1b4e1e": {
+    "case_id": "CASE-de1b4e1e",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-2853e3d5": {
+    "case_id": "CASE-2853e3d5",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-87f977de": {
+    "case_id": "CASE-87f977de",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-5fb66a4f": {
+    "case_id": "CASE-5fb66a4f",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "noisy_ocr",
+    "network": "MASTERCARD",
+    "failure_type": "noisy_ocr",
+    "notes": "noisy_ocr / MASTERCARD"
+  },
+  "CASE-968951f4": {
+    "case_id": "CASE-968951f4",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_3ds",
+    "network": "MASTERCARD",
+    "failure_type": "strong_3ds",
+    "notes": "strong_3ds / MASTERCARD"
+  },
+  "CASE-7e994376": {
+    "case_id": "CASE-7e994376",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "VISA",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / VISA"
+  },
+  "CASE-85ebfaf3": {
+    "case_id": "CASE-85ebfaf3",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
+  },
+  "CASE-a011ef2c": {
+    "case_id": "CASE-a011ef2c",
+    "expected_recommendation": "INSUFFICIENT",
+    "expected_score_range": [
+      25,
+      49
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "weak_insufficient",
+    "network": "MASTERCARD",
+    "failure_type": "weak_insufficient",
+    "notes": "weak_insufficient / MASTERCARD"
+  },
+  "CASE-bf0ce284": {
+    "case_id": "CASE-bf0ce284",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-970c84b7": {
+    "case_id": "CASE-970c84b7",
+    "expected_recommendation": "ABSTAIN",
+    "expected_score_range": [
+      0,
+      24
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "insufficient_minimal",
+    "network": "MASTERCARD",
+    "failure_type": "insufficient_minimal",
+    "notes": "insufficient_minimal / MASTERCARD"
+  },
+  "CASE-745c98ca": {
+    "case_id": "CASE-745c98ca",
+    "expected_recommendation": "REVIEW",
+    "expected_score_range": [
+      50,
+      74
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "moderate_gaps",
+    "network": "MASTERCARD",
+    "failure_type": "moderate_gaps",
+    "notes": "moderate_gaps / MASTERCARD"
+  },
+  "CASE-8e7da1e1": {
+    "case_id": "CASE-8e7da1e1",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      85,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_ce30",
+    "network": "VISA",
+    "failure_type": "strong_ce30",
+    "notes": "strong_ce30 / VISA"
+  },
+  "CASE-e1bae6ce": {
+    "case_id": "CASE-e1bae6ce",
+    "expected_recommendation": "CONTEST",
+    "expected_score_range": [
+      75,
+      100
+    ],
+    "requirement_labels": {},
+    "expected_contradictions": 0,
+    "has_injection": false,
+    "archetype": "strong_complete",
+    "network": "VISA",
+    "failure_type": "strong_complete",
+    "notes": "strong_complete / VISA"
   }
 }
