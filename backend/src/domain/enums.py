@@ -117,3 +117,13 @@ class ScoringFactorType(str, Enum):
     POSITIVE = "POSITIVE"
     NEGATIVE = "NEGATIVE"
     MISSING = "MISSING"
+
+class ContradictionType(str, Enum):
+    """Categories of contradictions the deterministic detector can surface."""
+    IP_MISMATCH = "IP_MISMATCH"
+    IDENTITY_MISMATCH = "IDENTITY_MISMATCH"
+    AMOUNT_MISMATCH = "AMOUNT_MISMATCH"
+    TIMELINE_ORDER = "TIMELINE_ORDER"
+    USAGE_BEFORE_PURCHASE = "USAGE_BEFORE_PURCHASE"
+    CUSTOMER_STATEMENT_CONFLICT = "CUSTOMER_STATEMENT_CONFLICT"
+    FUTURE_TIMESTAMP = "FUTURE_TIMESTAMP"

@@ -1,9 +1,19 @@
 import hashlib
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import List, Optional
 from uuid import uuid4
 
 from pydantic import BaseModel, Field, field_validator
+
+
+def now_utc() -> datetime:
+    """Return the current time as a timezone-aware UTC datetime.
+
+    Replaces the deprecated ``datetime.utcnow`` (which returns a naive
+    datetime and is scheduled for removal). All timestamps in the domain
+    are timezone-aware UTC.
+    """
+    return datetime.now(timezone.utc)
 
 from src.domain.enums import (
     CardNetwork,
@@ -68,7 +78,7 @@ class EvidenceItem(BaseModel):
     raw_content: Optional[str] = Field(default=None, description="Raw text content if available")
     extracted_facts: List[ExtractedFact] = Field(default_factory=list, description="Facts extracted from this evidence")
     confidence: float = Field(default=1.0, ge=0.0, le=1.0, description="Overall confidence in this evidence item")
-    created_at: datetime = Field(default_factory=datetime.utcnow, description="When this item was created")
+    created_at: datetime = Field(default_factory=now_utc, description="When this item was created")
 
     @field_validator("id")
     @classmethod
@@ -92,6 +102,9 @@ class TimelineEvent(BaseModel):
     timestamp: datetime = Field(description="When the event occurred")
     description: str = Field(description="What happened")
     evidence_id: str = Field(description="ID of the evidence that proves this event")
+    event_type: Optional[str] = Field(default=None, description="Semantic category, e.g. PAYMENT, ACCESS, AUTH, COMMUNICATION")
+    actor: Optional[str] = Field(default=None, description="Who/what performed the event, when derivable from evidence")
+    ip_address: Optional[str] = Field(default=None, description="IP associated with the event, when present")
     anomalies: List[TimelineAnomaly] = Field(default_factory=list, description="Anomalies associated with this event")
 
 
@@ -118,7 +131,12 @@ class Requirement(BaseModel):
     name: str = Field(description="Name of the requirement")
     description: str = Field(description="Description of what is required")
     status: RequirementStatus = Field(default=RequirementStatus.MISSING, description="Whether the requirement is met")
+    strength: str = Field(default="SUPPORTING", description="REQUIRED, STRONG, or SUPPORTING (from the rule definition)")
+    coverage: float = Field(default=0.0, ge=0.0, le=1.0, description="Fraction of required fact types found in evidence")
+    is_auto_win: bool = Field(default=False, description="Whether satisfying this requirement is an automatic liability shift")
     evidence_candidates: List[str] = Field(default_factory=list, description="IDs of evidence that might satisfy this")
+    satisfied_fact_types: List[str] = Field(default_factory=list, description="Required fact types that were found")
+    missing_fact_types: List[str] = Field(default_factory=list, description="Required fact types that are still missing")
     source_reference: str = Field(description="Citation to the card network rules")
 
 
@@ -157,7 +175,11 @@ class EvidencePackage(BaseModel):
     score: Optional[EvidenceScore] = Field(default=None, description="Score of the package")
     timeline: List[TimelineEvent] = Field(default_factory=list, description="Reconstructed timeline")
     contradictions: List[Contradiction] = Field(default_factory=list, description="Any unresolvable contradictions")
-    generated_at: datetime = Field(default_factory=datetime.utcnow, description="When the package was generated")
+    recommendation: Optional[Recommendation] = Field(default=None, description="Overall recommended action")
+    review_required: bool = Field(default=True, description="Whether human review is required before any submission")
+    review_reasons: List[str] = Field(default_factory=list, description="Why the package needs human review")
+    network_submission: Optional[dict] = Field(default=None, description="Draft network submission payload (action='draft'; never auto-submitted)")
+    generated_at: datetime = Field(default_factory=now_utc, description="When the package was generated")
 
 
 class DisputeCase(BaseModel):
@@ -165,6 +187,7 @@ class DisputeCase(BaseModel):
     id: str = Field(default_factory=generate_case_id, description="Unique case ID")
     merchant_id: str = Field(description="ID of the merchant")
     transaction_id: str = Field(description="Original transaction ID")
+    dispute_id: Optional[str] = Field(default=None, description="Network dispute/chargeback reference, if known")
     amount: float = Field(description="Disputed amount")
     currency: str = Field(description="Currency code")
     network: CardNetwork = Field(description="Card network")
@@ -172,8 +195,10 @@ class DisputeCase(BaseModel):
     reason_code: str = Field(description="Network reason code (e.g., '10.4', '4837')")
     phase: DisputePhase = Field(default=DisputePhase.CHARGEBACK, description="Current phase")
     status: CaseStatus = Field(default=CaseStatus.OPEN, description="Current status")
-    created_at: datetime = Field(default_factory=datetime.utcnow, description="When the case was created")
-    updated_at: datetime = Field(default_factory=datetime.utcnow, description="When the case was last updated")
+    transaction_date: Optional[datetime] = Field(default=None, description="When the disputed transaction occurred (used for CE 3.0 windows)")
+    respond_by: Optional[datetime] = Field(default=None, description="Network deadline to respond to the dispute")
+    created_at: datetime = Field(default_factory=now_utc, description="When the case was created")
+    updated_at: datetime = Field(default_factory=now_utc, description="When the case was last updated")
     evidence_items: List[EvidenceItem] = Field(default_factory=list, description="Evidence gathered")
     claims: List[Claim] = Field(default_factory=list, description="Claims generated")
     package: Optional[EvidencePackage] = Field(default=None, description="Final evidence package")
@@ -186,12 +211,22 @@ class DisputeCase(BaseModel):
             raise ValueError("Case ID must start with CASE-")
         return v
 
+    @property
+    def effective_transaction_date(self) -> datetime:
+        """The transaction date if known, otherwise the case creation time.
+
+        CE 3.0 windows are measured relative to the disputed transaction; when
+        an explicit transaction date is not supplied we fall back to case
+        creation so downstream logic never operates on ``None``.
+        """
+        return self.transaction_date or self.created_at
+
 
 class AuditLogEntry(BaseModel):
     """An entry in the audit log for AI decisions."""
     id: str = Field(default_factory=lambda: str(uuid4()), description="Log entry ID")
     case_id: str = Field(description="Associated case ID")
-    timestamp: datetime = Field(default_factory=datetime.utcnow, description="When the action occurred")
+    timestamp: datetime = Field(default_factory=now_utc, description="When the action occurred")
     pipeline_stage: str = Field(description="Stage of the pipeline (e.g., EXTRACTION, SCORING)")
     model_used: str = Field(description="Name/version of the AI model used")
     prompt_hash: Optional[str] = Field(default=None, description="Hash of the prompt sent")
@@ -209,6 +244,9 @@ class CaseCreateRequest(BaseModel):
     currency: str
     network: CardNetwork
     reason_code: str
+    dispute_id: Optional[str] = None
+    transaction_date: Optional[datetime] = None
+    respond_by: Optional[datetime] = None
 
 
 class CaseResponse(BaseModel):
