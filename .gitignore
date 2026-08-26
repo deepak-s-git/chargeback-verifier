@@ -58,6 +58,10 @@ venv.bak/
 # sqlite
 *.db
 
+# generated evaluation reports (deterministic, regenerable via evaluate.py;
+# docs/evaluation.md is the committed record of the numbers)
+backend/evaluation/reports/
+
 # node
 node_modules/
 dist/
