@@ -25,3 +25,15 @@ We will build a **Synthetic Benchmark** consisting of 200 standardized cases wit
 ## Consequences
 - Provides empirical proof of the system's reliability for the judging panel.
 - Allows for automated regression testing as prompts and logic are tuned.
+
+## Amendment (2026-08-26)
+
+The benchmark was rebuilt to make it **coherent by construction**, which is the property the original lacked (the old dataset's labels did not agree with any single rulebook, capping accuracy at 17–23%). The realized design, superseding the generic "Case Variations" above:
+
+- **Generated from the rules the engine implements** (`scripts/generate_dataset.py`), deterministically with `seed=42`, into a fixed **120 / 40 / 40** train / validation / test split (200 cases).
+- **Self-validating:** the generator asserts the real engine's verdict matches the intended label as each case is written, so label drift is a hard generation failure.
+- **Nine concrete archetypes** (not the loose categories above): `strong_complete`, `strong_ce30`, `strong_3ds` → CONTEST; `moderate_gaps`, `noisy_ocr` → REVIEW; `contradictory`, `adversarial_injection` → REVIEW (forced, regardless of score); `weak_insufficient` → INSUFFICIENT; `insufficient_minimal` → ABSTAIN.
+- **Majority-class baseline = 42.5%** (always-CONTEST), the bar any real engine must beat.
+- **Honest reading:** a full-engine 100% is an *internal-validity/coherence* result, not out-of-distribution generalization. The substantive signals are the ablation delta, safety-critical recall, the majority baseline, and BEFORE→AFTER.
+
+Methodology and the metric suite are formalized in [ADR-009](ADR-009-evaluation-methodology.md) and [docs/evaluation.md](../evaluation.md).

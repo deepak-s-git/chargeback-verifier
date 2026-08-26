@@ -15,3 +15,11 @@ We will use **Gemini 2.5 Flash** as our primary model, implemented behind an abs
 ## Consequences
 - All LLM interactions must go through a single interface/abstraction layer.
 - The system is not locked into Gemini; if a better model is required later (e.g., Gemini 2.5 Pro for harder edge cases), swapping it is a configuration change, not a code rewrite.
+
+## Amendment (2026-08-26)
+
+Three clarifications on how this landed in code:
+
+1. **The model's job is extraction only.** The Context above mentions "natural language contradiction detection" as an AI-layer task; that was reclassified to the deterministic layer (see [ADR-001 amendment](ADR-001-hybrid-architecture.md) and [ADR-008](ADR-008-deterministic-first.md)). Gemini 2.5 Flash is used solely to propose structured facts during ingestion.
+2. **Deterministic by default.** The abstraction is the `LLMClient` Protocol (`src/extraction/llm_client.py`); Gemini runs at **temperature 0.0** against a structured schema, and a `MockLLMClient` is selected automatically when `GEMINI_API_KEY` is absent (`src/api/app.py:41-52`). The system is fully operational — and fully evaluable — with no key.
+3. **The key is never logged** — only the client class name and model are emitted. See [docs/security.md](../security.md) §3.4.
