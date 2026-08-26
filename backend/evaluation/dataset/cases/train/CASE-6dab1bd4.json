@@ -1,0 +1,145 @@
+{
+  "id": "CASE-6dab1bd4",
+  "merchant_id": "mer_33d90d19",
+  "transaction_id": "tx_3ef53dfaa123",
+  "dispute_id": null,
+  "amount": 30230.0,
+  "currency": "INR",
+  "network": "VISA",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "10.4",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-02-05T15:14:36Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.423578Z",
+  "updated_at": "2026-08-26T10:50:27.423578Z",
+  "evidence_items": [
+    {
+      "id": "EV-4a576ed1",
+      "case_id": "CASE-6dab1bd4",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_a0a540d3035a49\", \"amount\": 30230, \"currency\": \"INR\", \"method\": \"card\", \"status\": \"captured\"}\n~~ scan artifacts: rn cl vv o0 l1 (low-confidence OCR layer) ~~",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_a0a540d3035a49",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "720dcad5f9bb52e5569efb781991cebea3744240fffd74e0073c8d6a10ba8355"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "30230",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "720dcad5f9bb52e5569efb781991cebea3744240fffd74e0073c8d6a10ba8355"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "720dcad5f9bb52e5569efb781991cebea3744240fffd74e0073c8d6a10ba8355"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.423590Z"
+    },
+    {
+      "id": "EV-ad699653",
+      "case_id": "CASE-6dab1bd4",
+      "source_type": "ACCESS_LOG",
+      "semantic_type": "ACCESS_PROOF",
+      "file_path": null,
+      "raw_content": "timestamp=2026-02-05T15:19:36+00:00 user_id=usr_65028 ip_address=192.168.1.201 action=login resource=dashboard\n~~ scan artifacts: rn cl vv o0 l1 (low-confidence OCR layer) ~~",
+      "extracted_facts": [
+        {
+          "type": "TIMESTAMP",
+          "value": "2026-02-05T15:19:36+00:00",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access_log.txt",
+            "source_location": "1",
+            "content_hash": "63341ee92ea279c612c6261bc960014f63fab763cdf3a4ce00d720f8424641a8"
+          }
+        },
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.201",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access_log.txt",
+            "source_location": "1",
+            "content_hash": "63341ee92ea279c612c6261bc960014f63fab763cdf3a4ce00d720f8424641a8"
+          }
+        },
+        {
+          "type": "ACCOUNT_ID",
+          "value": "usr_65028",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access_log.txt",
+            "source_location": "1",
+            "content_hash": "63341ee92ea279c612c6261bc960014f63fab763cdf3a4ce00d720f8424641a8"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.423599Z"
+    },
+    {
+      "id": "EV-9967c62c",
+      "case_id": "CASE-6dab1bd4",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "[2026-02-06 15:14] Sara Khan <customer4524@example.com>: I am having trouble with the export feature, can you help me use it?\n~~ scan artifacts: rn cl vv o0 l1 (low-confidence OCR layer) ~~",
+      "extracted_facts": [
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer4524@example.com",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "8be7caaa4773de74fb61de26cd76669f9bde4bf4ee7cd6fc00130f9ab147b3f2"
+          }
+        },
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Sara Khan",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "8be7caaa4773de74fb61de26cd76669f9bde4bf4ee7cd6fc00130f9ab147b3f2"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.423609Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

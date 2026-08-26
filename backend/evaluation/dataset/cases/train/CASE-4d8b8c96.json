@@ -1,0 +1,179 @@
+{
+  "id": "CASE-4d8b8c96",
+  "merchant_id": "mer_5addfef9",
+  "transaction_id": "tx_b234264566d2",
+  "dispute_id": null,
+  "amount": 7584.0,
+  "currency": "INR",
+  "network": "MASTERCARD",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "4837",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-05-24T06:21:08Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.365383Z",
+  "updated_at": "2026-08-26T10:50:27.365383Z",
+  "evidence_items": [
+    {
+      "id": "EV-e5e2b668",
+      "case_id": "CASE-4d8b8c96",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_af751e54a7d842\", \"amount\": 7584, \"currency\": \"INR\", \"method\": \"card\", \"status\": \"captured\"}",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_af751e54a7d842",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "bb1dc66a0195e5607d7e41cf766263db1a19f3df90a23d62f9115903b5b26c68"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "7584",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "bb1dc66a0195e5607d7e41cf766263db1a19f3df90a23d62f9115903b5b26c68"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "bb1dc66a0195e5607d7e41cf766263db1a19f3df90a23d62f9115903b5b26c68"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.365393Z"
+    },
+    {
+      "id": "EV-b1c1c1f5",
+      "case_id": "CASE-4d8b8c96",
+      "source_type": "DEVICE_LOG",
+      "semantic_type": "IDENTITY_PROOF",
+      "file_path": null,
+      "raw_content": "device_id=dev_c2999d0832 ip=192.168.1.52",
+      "extracted_facts": [
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.52",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device_log.txt",
+            "source_location": "1",
+            "content_hash": "67600a6b8ab54003c5da5bc8ed4ec9649e47978ac222a3179fe0dc4fffb7a70b"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_c2999d0832",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device_log.txt",
+            "source_location": "1",
+            "content_hash": "67600a6b8ab54003c5da5bc8ed4ec9649e47978ac222a3179fe0dc4fffb7a70b"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.365399Z"
+    },
+    {
+      "id": "EV-f03c7729",
+      "case_id": "CASE-4d8b8c96",
+      "source_type": "DOWNLOAD_LOG",
+      "semantic_type": "DELIVERY_PROOF",
+      "file_path": null,
+      "raw_content": "timestamp=2026-05-24T07:21:08+00:00 email=customer2876@example.com account=usr_50768 status=delivered download_count=1",
+      "extracted_facts": [
+        {
+          "type": "TIMESTAMP",
+          "value": "2026-05-24T07:21:08+00:00",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "download_log.txt",
+            "source_location": "1",
+            "content_hash": "c3f553067fd32e563008788c8bb56b70b6e0ed06cdba31fe8186093b8f0013c0"
+          }
+        },
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer2876@example.com",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "download_log.txt",
+            "source_location": "1",
+            "content_hash": "c3f553067fd32e563008788c8bb56b70b6e0ed06cdba31fe8186093b8f0013c0"
+          }
+        },
+        {
+          "type": "ACCOUNT_ID",
+          "value": "usr_50768",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "download_log.txt",
+            "source_location": "1",
+            "content_hash": "c3f553067fd32e563008788c8bb56b70b6e0ed06cdba31fe8186093b8f0013c0"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.365408Z"
+    },
+    {
+      "id": "EV-cf7ec57f",
+      "case_id": "CASE-4d8b8c96",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "[2026-05-25 06:21] Priya Nair <customer2876@example.com>: I am having trouble with the export feature, can you help me use it?",
+      "extracted_facts": [
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer2876@example.com",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "2d15bda54575acbf4cd53a195d1aeaf143231fcd4d5ea4bc9d31ae46cef54470"
+          }
+        },
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Priya Nair",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "2d15bda54575acbf4cd53a195d1aeaf143231fcd4d5ea4bc9d31ae46cef54470"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.365416Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

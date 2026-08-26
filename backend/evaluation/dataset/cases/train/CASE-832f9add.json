@@ -1,0 +1,44 @@
+{
+  "id": "CASE-832f9add",
+  "merchant_id": "mer_0350c423",
+  "transaction_id": "tx_371907ecd41d",
+  "dispute_id": null,
+  "amount": 11283.0,
+  "currency": "INR",
+  "network": "VISA",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "10.4",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-07-29T11:38:40Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.398598Z",
+  "updated_at": "2026-08-26T10:50:27.398598Z",
+  "evidence_items": [
+    {
+      "id": "EV-af4c20a8",
+      "case_id": "CASE-832f9add",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "Internal support note regarding account holder Vikram Rao. No further detail on file.",
+      "extracted_facts": [
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Vikram Rao",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "c696d6392c889919859f3bc6f2339b509ceb6f50441d1583690430f56393a9f7"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.398605Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

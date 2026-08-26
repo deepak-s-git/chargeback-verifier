@@ -1,0 +1,44 @@
+{
+  "id": "CASE-7b72eafb",
+  "merchant_id": "mer_4111ac44",
+  "transaction_id": "tx_643dfccf8fe5",
+  "dispute_id": null,
+  "amount": 23589.0,
+  "currency": "INR",
+  "network": "VISA",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "10.4",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-07-12T21:50:01Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.398323Z",
+  "updated_at": "2026-08-26T10:50:27.398324Z",
+  "evidence_items": [
+    {
+      "id": "EV-b7effc75",
+      "case_id": "CASE-7b72eafb",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "Internal support note regarding account holder Priya Nair. No further detail on file.",
+      "extracted_facts": [
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Priya Nair",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "49938d1e0c95b6fe460e632c36634036ccb04fbf9605c5e861287e1f863a008f"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.398332Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

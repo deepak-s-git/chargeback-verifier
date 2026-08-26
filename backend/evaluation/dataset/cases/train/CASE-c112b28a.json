@@ -1,0 +1,44 @@
+{
+  "id": "CASE-c112b28a",
+  "merchant_id": "mer_15a82a5d",
+  "transaction_id": "tx_f6dfc6a9d8f3",
+  "dispute_id": null,
+  "amount": 42858.0,
+  "currency": "INR",
+  "network": "VISA",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "10.4",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-03-15T20:09:30Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.398393Z",
+  "updated_at": "2026-08-26T10:50:27.398393Z",
+  "evidence_items": [
+    {
+      "id": "EV-6f8b8cf0",
+      "case_id": "CASE-c112b28a",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "Internal support note regarding account holder Rahul Sharma. No further detail on file.",
+      "extracted_facts": [
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Rahul Sharma",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "5433d8784b721d7d73b3ea45f14d9d790e04b7158c80b25818ec3841618fc2a7"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.398401Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

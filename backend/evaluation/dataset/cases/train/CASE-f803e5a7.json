@@ -1,0 +1,179 @@
+{
+  "id": "CASE-f803e5a7",
+  "merchant_id": "mer_b223b026",
+  "transaction_id": "tx_f21b54bbeaa2",
+  "dispute_id": null,
+  "amount": 18254.0,
+  "currency": "INR",
+  "network": "MASTERCARD",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "4837",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-06-15T05:58:58Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.378449Z",
+  "updated_at": "2026-08-26T10:50:27.378449Z",
+  "evidence_items": [
+    {
+      "id": "EV-f7c12215",
+      "case_id": "CASE-f803e5a7",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_283ab772e00b48\", \"amount\": 18254, \"currency\": \"INR\", \"method\": \"card\", \"status\": \"captured\"}",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_283ab772e00b48",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "68618590b7f44ac87e80eca62941efba7a846ba643bcee96f030dacb4289f2ea"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "18254",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "68618590b7f44ac87e80eca62941efba7a846ba643bcee96f030dacb4289f2ea"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "68618590b7f44ac87e80eca62941efba7a846ba643bcee96f030dacb4289f2ea"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.378459Z"
+    },
+    {
+      "id": "EV-0109a5ec",
+      "case_id": "CASE-f803e5a7",
+      "source_type": "DEVICE_LOG",
+      "semantic_type": "IDENTITY_PROOF",
+      "file_path": null,
+      "raw_content": "device_id=dev_b3e16d14dc ip=192.168.1.200",
+      "extracted_facts": [
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.200",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device_log.txt",
+            "source_location": "1",
+            "content_hash": "feeabc91e4befd7a2d5f41596650619d09fb74417e14f88aeb067a2a4a1c3cbb"
+          }
+        },
+        {
+          "type": "DEVICE_ID",
+          "value": "dev_b3e16d14dc",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "device_log.txt",
+            "source_location": "1",
+            "content_hash": "feeabc91e4befd7a2d5f41596650619d09fb74417e14f88aeb067a2a4a1c3cbb"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.378465Z"
+    },
+    {
+      "id": "EV-0cff11b7",
+      "case_id": "CASE-f803e5a7",
+      "source_type": "DOWNLOAD_LOG",
+      "semantic_type": "DELIVERY_PROOF",
+      "file_path": null,
+      "raw_content": "timestamp=2026-06-15T06:58:58+00:00 email=customer6419@example.com account=usr_69473 status=delivered download_count=1",
+      "extracted_facts": [
+        {
+          "type": "TIMESTAMP",
+          "value": "2026-06-15T06:58:58+00:00",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "download_log.txt",
+            "source_location": "1",
+            "content_hash": "3f3074033eca910a709f3dcce4a2ab243146dfd995cb1d87870186c0096c13cd"
+          }
+        },
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer6419@example.com",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "download_log.txt",
+            "source_location": "1",
+            "content_hash": "3f3074033eca910a709f3dcce4a2ab243146dfd995cb1d87870186c0096c13cd"
+          }
+        },
+        {
+          "type": "ACCOUNT_ID",
+          "value": "usr_69473",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "download_log.txt",
+            "source_location": "1",
+            "content_hash": "3f3074033eca910a709f3dcce4a2ab243146dfd995cb1d87870186c0096c13cd"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.378473Z"
+    },
+    {
+      "id": "EV-e151da7a",
+      "case_id": "CASE-f803e5a7",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "[2026-06-16 05:58] Arjun Mehta <customer6419@example.com>: I am having trouble with the export feature, can you help me use it?",
+      "extracted_facts": [
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer6419@example.com",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "d9f7152fd4ce517b22c6dffc8d05d9020ebaa9403c4df28aaaf64f4c54a9e03a"
+          }
+        },
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Arjun Mehta",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "d9f7152fd4ce517b22c6dffc8d05d9020ebaa9403c4df28aaaf64f4c54a9e03a"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.378482Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

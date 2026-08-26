@@ -1,0 +1,145 @@
+{
+  "id": "CASE-d0e582bb",
+  "merchant_id": "mer_243f3a90",
+  "transaction_id": "tx_14fb5bf49fbd",
+  "dispute_id": null,
+  "amount": 37588.0,
+  "currency": "INR",
+  "network": "VISA",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "10.4",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-02-09T13:47:20Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.367371Z",
+  "updated_at": "2026-08-26T10:50:27.367371Z",
+  "evidence_items": [
+    {
+      "id": "EV-c020a0a8",
+      "case_id": "CASE-d0e582bb",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_0fcf1b0fcc3b4a\", \"amount\": 37588, \"currency\": \"INR\", \"method\": \"card\", \"status\": \"captured\"}",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_0fcf1b0fcc3b4a",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "6285684430697826097ebb75194888ddeaa378392079fd7537abacb459b612cb"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "37588",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "6285684430697826097ebb75194888ddeaa378392079fd7537abacb459b612cb"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "6285684430697826097ebb75194888ddeaa378392079fd7537abacb459b612cb"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.367381Z"
+    },
+    {
+      "id": "EV-8a3a7c58",
+      "case_id": "CASE-d0e582bb",
+      "source_type": "ACCESS_LOG",
+      "semantic_type": "ACCESS_PROOF",
+      "file_path": null,
+      "raw_content": "timestamp=2026-02-09T13:52:20+00:00 user_id=usr_25866 ip_address=192.168.1.188 action=login resource=dashboard",
+      "extracted_facts": [
+        {
+          "type": "TIMESTAMP",
+          "value": "2026-02-09T13:52:20+00:00",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access_log.txt",
+            "source_location": "1",
+            "content_hash": "6b0171889f7b339a2ab306a9f361dcb55c60f5ec9be3a71ffb0343a5fb91c6c9"
+          }
+        },
+        {
+          "type": "IP_ADDRESS",
+          "value": "192.168.1.188",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access_log.txt",
+            "source_location": "1",
+            "content_hash": "6b0171889f7b339a2ab306a9f361dcb55c60f5ec9be3a71ffb0343a5fb91c6c9"
+          }
+        },
+        {
+          "type": "ACCOUNT_ID",
+          "value": "usr_25866",
+          "confidence": 0.95,
+          "extraction_method": "REGEX",
+          "provenance": {
+            "source_file": "access_log.txt",
+            "source_location": "1",
+            "content_hash": "6b0171889f7b339a2ab306a9f361dcb55c60f5ec9be3a71ffb0343a5fb91c6c9"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.367390Z"
+    },
+    {
+      "id": "EV-18278347",
+      "case_id": "CASE-d0e582bb",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "[2026-02-10 13:47] Vikram Rao <customer5941@example.com>: I am having trouble with the export feature, can you help me use it?",
+      "extracted_facts": [
+        {
+          "type": "EMAIL_ADDRESS",
+          "value": "customer5941@example.com",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "1b1561c4e7b6a93c9210db8d4bdc58fdaf08d47d4d1c2e40f9f2649a5e53015f"
+          }
+        },
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Vikram Rao",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "1b1561c4e7b6a93c9210db8d4bdc58fdaf08d47d4d1c2e40f9f2649a5e53015f"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.367398Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

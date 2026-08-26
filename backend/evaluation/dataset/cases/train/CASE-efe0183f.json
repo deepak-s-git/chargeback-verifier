@@ -1,0 +1,44 @@
+{
+  "id": "CASE-efe0183f",
+  "merchant_id": "mer_5b9b0f7b",
+  "transaction_id": "tx_eb361cfb2a07",
+  "dispute_id": null,
+  "amount": 37588.0,
+  "currency": "INR",
+  "network": "MASTERCARD",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "4837",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-04-25T15:45:00Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.398260Z",
+  "updated_at": "2026-08-26T10:50:27.398260Z",
+  "evidence_items": [
+    {
+      "id": "EV-221e7eb2",
+      "case_id": "CASE-efe0183f",
+      "source_type": "SUPPORT_CHAT",
+      "semantic_type": "COMMUNICATION",
+      "file_path": null,
+      "raw_content": "Internal support note regarding account holder Arjun Mehta. No further detail on file.",
+      "extracted_facts": [
+        {
+          "type": "CUSTOMER_NAME",
+          "value": "Arjun Mehta",
+          "confidence": 0.95,
+          "extraction_method": "LLM",
+          "provenance": {
+            "source_file": "support_chat.txt",
+            "source_location": "1",
+            "content_hash": "987a35302dbae576eea9c3b9f4bb3b2e187f6da68cde45adc578855c130722b1"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.398269Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}

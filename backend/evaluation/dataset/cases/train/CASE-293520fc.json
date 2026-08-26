@@ -1,0 +1,66 @@
+{
+  "id": "CASE-293520fc",
+  "merchant_id": "mer_a6deb54a",
+  "transaction_id": "tx_a91954422f32",
+  "dispute_id": null,
+  "amount": 38860.0,
+  "currency": "INR",
+  "network": "VISA",
+  "category": "FRAUD_UNAUTHORIZED",
+  "reason_code": "10.4",
+  "phase": "CHARGEBACK",
+  "status": "OPEN",
+  "transaction_date": "2026-07-02T17:23:07Z",
+  "respond_by": null,
+  "created_at": "2026-08-26T10:50:27.394792Z",
+  "updated_at": "2026-08-26T10:50:27.394792Z",
+  "evidence_items": [
+    {
+      "id": "EV-fbf14bb9",
+      "case_id": "CASE-293520fc",
+      "source_type": "PAYMENT_RECORD",
+      "semantic_type": "PAYMENT_PROOF",
+      "file_path": null,
+      "raw_content": "{\"payment_id\": \"pay_0a5164649ab74c\", \"amount\": 38860, \"currency\": \"INR\", \"method\": \"card\", \"status\": \"captured\"}",
+      "extracted_facts": [
+        {
+          "type": "PAYMENT_ID",
+          "value": "pay_0a5164649ab74c",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "837d54a555291497003f9012864ebef3cb6f5c8e85b1d598ed847769b762175f"
+          }
+        },
+        {
+          "type": "AMOUNT",
+          "value": "38860",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "837d54a555291497003f9012864ebef3cb6f5c8e85b1d598ed847769b762175f"
+          }
+        },
+        {
+          "type": "CURRENCY",
+          "value": "INR",
+          "confidence": 0.95,
+          "extraction_method": "DETERMINISTIC",
+          "provenance": {
+            "source_file": "payment_record.txt",
+            "source_location": "1",
+            "content_hash": "837d54a555291497003f9012864ebef3cb6f5c8e85b1d598ed847769b762175f"
+          }
+        }
+      ],
+      "confidence": 1.0,
+      "created_at": "2026-08-26T10:50:27.394802Z"
+    }
+  ],
+  "claims": [],
+  "package": null
+}
