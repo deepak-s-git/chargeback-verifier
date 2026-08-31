@@ -2,7 +2,7 @@
 
 **How the DisputeShield workbench is laid out, how it loads data, and what it deliberately does — and does not — do.**
 
-*Scope: the rebuilt DisputeShield frontend — its shell, the case workspace, and the client that feeds them. Every claim below is verified against the current source with `path:line` citations (paths relative to `frontend/src`). Verified 2026-08-26 against `frontend/src`. Companion documents: [Design system](design-system.md) · [Product](product.md) · [Architecture](architecture.md) · [Failure analysis](failure-analysis.md).*
+*Scope: the rebuilt DisputeShield frontend — its shell, the case workspace, and the client that feeds them. Every claim below is verified against the current source with `path:line` citations (paths relative to `src`). Verified 2026-08-26 against `src`. Companion documents: [Design system](design-system.md) · [Product](product.md) · [Architecture](architecture.md) · [Failure analysis](failure-analysis.md).*
 
 ---
 

@@ -2,7 +2,7 @@
 
 **DisputeShield — the token set, five-intent color language, and component primitives the Evidence Workbench is built from.**
 
-*Scope: the rebuilt DisputeShield frontend (`frontend/src`). Every token, class, and version below is verified against the current source with `path:line` citations. Verified 2026-08-26 against `frontend/src`. Companion documents: [UX](ux.md) · [Product](product.md) · [Architecture](architecture.md).*
+*Scope: the rebuilt DisputeShield frontend (`src`). Every token, class, and version below is verified against the current source with `path:line` citations. Verified 2026-08-26 against `src`. Companion documents: [UX](ux.md) · [Product](product.md) · [Architecture](architecture.md).*
 
 ---
 
@@ -10,11 +10,11 @@
 
 Three ideas hold the visual layer together:
 
-1. **CSS-first Tailwind v4.** There is **no `tailwind.config.js`** (confirmed absent). Tailwind is pulled in with a single `@import 'tailwindcss';` (`frontend/src/index.css:1`) and wired through the `@tailwindcss/vite` plugin (`frontend/vite.config.ts`), not PostCSS. Layout utilities (flex/grid/spacing) are applied inline in JSX; color, surface, and component semantics live in **one** stylesheet, `frontend/src/index.css`.
+1. **CSS-first Tailwind v4.** There is **no `tailwind.config.js`** (confirmed absent). Tailwind is pulled in with a single `@import 'tailwindcss';` (`src/index.css:1`) and wired through the `@tailwindcss/vite` plugin (`vite.config.ts`), not PostCSS. Layout utilities (flex/grid/spacing) are applied inline in JSX; color, surface, and component semantics live in **one** stylesheet, `src/index.css`.
 2. **Token-driven.** Colors, radii, and shadows are CSS custom properties. Component classes reference them via `var(--token)` and never hard-code a hex, so the palette stays controlled from a single declaration block.
-3. **Intent-based, not ad-hoc color.** Every risk-bearing domain enum is reduced to one of **five semantic intents** in `frontend/src/lib/status.ts`, and components pick a class from that intent (`frontend/src/components/ui.tsx`). A color means the same thing in every panel because the meaning is decided once.
+3. **Intent-based, not ad-hoc color.** Every risk-bearing domain enum is reduced to one of **five semantic intents** in `src/lib/status.ts`, and components pick a class from that intent (`src/components/ui.tsx`). A color means the same thing in every panel because the meaning is decided once.
 
-> **Where the tokens actually live.** In Tailwind v4 the `@theme` directive is what generates utility classes from tokens. Here `@theme` defines **only the two font families** (`frontend/src/index.css:18-23`); those become the `font-sans` / `font-mono` utilities. The rest of the design tokens — palette, radius, shadow — are declared in a plain `:root` block (`:25-74`) and consumed through `var()`. So the palette is deliberately *not* exposed as Tailwind color utilities; it is reached only through the component classes below.
+> **Where the tokens actually live.** In Tailwind v4 the `@theme` directive is what generates utility classes from tokens. Here `@theme` defines **only the two font families** (`src/index.css:18-23`); those become the `font-sans` / `font-mono` utilities. The rest of the design tokens — palette, radius, shadow — are declared in a plain `:root` block (`:25-74`) and consumed through `var()`. So the palette is deliberately *not* exposed as Tailwind color utilities; it is reached only through the component classes below.
 
 ```css
 @theme {
@@ -29,7 +29,7 @@ Three ideas hold the visual layer together:
 
 ## 2. Color tokens
 
-All values below are the literal declarations in the `:root` block of `frontend/src/index.css:25-74`. The design is a fixed dual-tone layout: a light, paper-like analysis **canvas** beside a near-black **command rail**.
+All values below are the literal declarations in the `:root` block of `src/index.css:25-74`. The design is a fixed dual-tone layout: a light, paper-like analysis **canvas** beside a near-black **command rail**.
 
 ### 2.1 Neutrals & surfaces (`:26-38`)
 
@@ -73,13 +73,13 @@ All values below are the literal declarations in the `:root` block of `frontend/
 
 ## 3. The five-intent system
 
-Intents are the backbone of the whole UI. The union type is the single source of truth (`frontend/src/lib/status.ts:21`):
+Intents are the backbone of the whole UI. The union type is the single source of truth (`src/lib/status.ts:21`):
 
 ```ts
 export type Intent = 'pos' | 'warn' | 'neu' | 'crit' | 'info';
 ```
 
-Each intent is a triple — foreground / background / border — declared together in `:root` (`frontend/src/index.css:57-62`):
+Each intent is a triple — foreground / background / border — declared together in `:root` (`src/index.css:57-62`):
 
 ```css
 --pos: #067a54;   --pos-bg: #ecfdf3;  --pos-bd: #a6e9c8;
@@ -103,7 +103,7 @@ The token names are the abbreviated forms (`pos`, `warn`, `neu`, `crit`, `info`)
 
 ## 4. Domain → intent mapping
 
-`frontend/src/lib/status.ts` is the only place a domain status becomes an intent. Feature components call these functions and pass the result to a primitive; they never choose a color themselves.
+`src/lib/status.ts` is the only place a domain status becomes an intent. Feature components call these functions and pass the result to a primitive; they never choose a color themselves.
 
 | Function | Source | Domain value → intent |
 |---|---|---|
@@ -120,7 +120,7 @@ The token names are the abbreviated forms (`pos`, `warn`, `neu`, `crit`, `info`)
 
 ## 5. Component primitives & the class contract
 
-Presentational primitives live in `frontend/src/components/ui.tsx` — no data fetching, no business logic. They translate an `Intent` into a class via three lookup records and render standard chrome.
+Presentational primitives live in `src/components/ui.tsx` — no data fetching, no business logic. They translate an `Intent` into a class via three lookup records and render standard chrome.
 
 | Primitive | Source | Props | Notes |
 |---|---|---|---|
@@ -134,7 +134,7 @@ Presentational primitives live in `frontend/src/components/ui.tsx` — no data f
 
 ### The `.pill` / `.badge` / `.meter` contract
 
-Each primitive maps `Intent` → class name (`ui.tsx:13-35`). The CSS classes are defined in `frontend/src/index.css` (pills `:166-170`, badges `:199-202`, meter fills `:341-344`). The mapping is **not** uniform across the three — some intents deliberately fall back to the base class:
+Each primitive maps `Intent` → class name (`ui.tsx:13-35`). The CSS classes are defined in `src/index.css` (pills `:166-170`, badges `:199-202`, meter fills `:341-344`). The mapping is **not** uniform across the three — some intents deliberately fall back to the base class:
 
 | Intent | `.pill--` (`:166`) | `.badge--` (`:199`) | `.meter__fill--` (`:341`) |
 |---|---|---|---|
@@ -190,7 +190,7 @@ There are **no custom spacing tokens**. Per the file's own header comment, "layo
 
 ## 7. Tooling & dependency versions
 
-From `frontend/package.json` (ranges as declared). Scripts: `dev` → `vite`, `build` → `tsc -b && vite build`, `lint` → `oxlint`, `preview` → `vite preview`.
+From `package.json` (ranges as declared). Scripts: `dev` → `vite`, `build` → `tsc -b && vite build`, `lint` → `oxlint`, `preview` → `vite preview`.
 
 | Package | Version | Role |
 |---|---|---|
@@ -207,7 +207,7 @@ From `frontend/package.json` (ranges as declared). Scripts: `dev` → `vite`, `b
 | `@types/react` | `^19.2.18` | React types |
 | `@types/react-dom` | `^19.2.4` | React DOM types |
 
-Vite registers `react()` and `tailwindcss()` and proxies `/api` → `http://localhost:8000` (`frontend/vite.config.ts`).
+Vite registers `react()` and `tailwindcss()` and proxies `/api` → `http://localhost:8000` (`vite.config.ts`).
 
 ---
 
@@ -222,4 +222,4 @@ Things a reader might expect that this system deliberately does **not** have:
 
 ---
 
-*Consistency note: this doc is descriptive, not aspirational — it records the tokens and classes that exist today. If a value here disagrees with `frontend/src`, the source wins; re-verify and update this file.*
+*Consistency note: this doc is descriptive, not aspirational — it records the tokens and classes that exist today. If a value here disagrees with `src`, the source wins; re-verify and update this file.*

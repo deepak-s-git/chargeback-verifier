@@ -81,7 +81,7 @@ The output is a `CaseAnalysisResult` carrying requirements, timeline, contradict
 | **Domain** | `src/domain/{models,enums,rules}.py` | Pydantic models, enums, per-network requirement definitions |
 | **Security** | `src/security/{injection,validators}.py` | Injection tripwire, upload validation |
 | **Database** | `src/database/{db,migrations,repositories}.py` | Connection-per-operation, self-healing schema, parameterized queries |
-| **Frontend** | `frontend/src/` | React 19 + Vite workbench (see [UX](ux.md), [Design system](design-system.md)) |
+| **Frontend** | `src/` | React 19 + Vite workbench (see [UX](ux.md), [Design system](design-system.md)) |
 
 ---
 

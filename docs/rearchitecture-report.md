@@ -64,7 +64,7 @@ One name, everywhere, forever. The inverted "formerly DisputeShield" framing is 
 | **Claim integrity** | LLM prose | Templated claims, grounded to `sha256(raw_content)` + presence, else BLOCKED | `src/verification/claim_verifier.py:40` |
 | **Package** | Fabricated metrics | Verified-claims-only draft, `action="draft"` hard invariant | `src/packaging/razorpay_mapper.py:60` |
 | **Persistence** | Crashed on old schema | Idempotent `_reconcile_columns` self-heal + env-configurable DB path | `src/database/migrations.py:52`, `src/database/db.py:31` |
-| **Frontend** | Fabricated win-prob / fees | Real data only across a 7-tab workbench; fabricated metrics removed | `frontend/src/features/case/CaseWorkspace.tsx` |
+| **Frontend** | Fabricated win-prob / fees | Real data only across a 7-tab workbench; fabricated metrics removed | `src/features/case/CaseWorkspace.tsx` |
 | **Verification** | Manual/none | In-process `TestClient` contract check (full ASGI stack, no socket bind) | `backend/scripts/contract_check.py` |
 
 ---
