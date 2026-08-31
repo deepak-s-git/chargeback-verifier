@@ -1,0 +1,454 @@
+{
+  "split": "validation",
+  "mode": "full",
+  "metrics": {
+    "total": 40,
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "per_class": {
+      "CONTEST": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 16,
+        "fp": 0,
+        "fn": 0,
+        "gt_positives": 16,
+        "pred_positives": 16
+      },
+      "REVIEW": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 12,
+        "fp": 0,
+        "fn": 0,
+        "gt_positives": 12,
+        "pred_positives": 12
+      },
+      "INSUFFICIENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "gt_positives": 8,
+        "pred_positives": 8
+      },
+      "ABSTAIN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "gt_positives": 4,
+        "pred_positives": 4
+      }
+    },
+    "support": {
+      "CONTEST": 16,
+      "REVIEW": 12,
+      "INSUFFICIENT": 8,
+      "ABSTAIN": 4
+    },
+    "confusion": {
+      "CONTEST": {
+        "CONTEST": 16,
+        "REVIEW": 0,
+        "INSUFFICIENT": 0,
+        "ABSTAIN": 0
+      },
+      "REVIEW": {
+        "CONTEST": 0,
+        "REVIEW": 12,
+        "INSUFFICIENT": 0,
+        "ABSTAIN": 0
+      },
+      "INSUFFICIENT": {
+        "CONTEST": 0,
+        "REVIEW": 0,
+        "INSUFFICIENT": 8,
+        "ABSTAIN": 0
+      },
+      "ABSTAIN": {
+        "CONTEST": 0,
+        "REVIEW": 0,
+        "INSUFFICIENT": 0,
+        "ABSTAIN": 4
+      }
+    },
+    "majority_class": "CONTEST",
+    "majority_baseline": 0.4,
+    "score_in_range": {
+      "count": 40,
+      "total": 40,
+      "rate": 1.0
+    },
+    "contradiction": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "gt_positives": 2,
+      "pred_positives": 2,
+      "exact_count_accuracy": 1.0
+    },
+    "injection": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "gt_positives": 0,
+      "pred_positives": 0
+    }
+  },
+  "failures": {
+    "misclassified_count": 0,
+    "by_archetype": {
+      "contradictory": {
+        "total": 2,
+        "correct": 2,
+        "errors": [],
+        "accuracy": 1.0
+      },
+      "insufficient_minimal": {
+        "total": 4,
+        "correct": 4,
+        "errors": [],
+        "accuracy": 1.0
+      },
+      "moderate_gaps": {
+        "total": 9,
+        "correct": 9,
+        "errors": [],
+        "accuracy": 1.0
+      },
+      "noisy_ocr": {
+        "total": 1,
+        "correct": 1,
+        "errors": [],
+        "accuracy": 1.0
+      },
+      "strong_3ds": {
+        "total": 5,
+        "correct": 5,
+        "errors": [],
+        "accuracy": 1.0
+      },
+      "strong_ce30": {
+        "total": 1,
+        "correct": 1,
+        "errors": [],
+        "accuracy": 1.0
+      },
+      "strong_complete": {
+        "total": 10,
+        "correct": 10,
+        "errors": [],
+        "accuracy": 1.0
+      },
+      "weak_insufficient": {
+        "total": 8,
+        "correct": 8,
+        "errors": [],
+        "accuracy": 1.0
+      }
+    },
+    "confusion_pairs": {},
+    "score_out_of_range": [],
+    "contradiction_misses": [],
+    "injection_misses": [],
+    "misclassified": []
+  },
+  "predictions": [
+    {
+      "case_id": "CASE-0099f9d8",
+      "recommendation": "CONTEST",
+      "score": 90.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-0dd277ee",
+      "recommendation": "INSUFFICIENT",
+      "score": 36.5,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-0e5b4e4d",
+      "recommendation": "CONTEST",
+      "score": 90.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-12f615ae",
+      "recommendation": "CONTEST",
+      "score": 85.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-18c9299c",
+      "recommendation": "INSUFFICIENT",
+      "score": 30.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-31685906",
+      "recommendation": "CONTEST",
+      "score": 93.8,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-35c10449",
+      "recommendation": "ABSTAIN",
+      "score": 6.2,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-419cd2fc",
+      "recommendation": "CONTEST",
+      "score": 85.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-490d2221",
+      "recommendation": "CONTEST",
+      "score": 85.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-4d40fab8",
+      "recommendation": "REVIEW",
+      "score": 66.7,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-4dad854b",
+      "recommendation": "CONTEST",
+      "score": 90.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-5688fb1b",
+      "recommendation": "CONTEST",
+      "score": 93.8,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-5bfb0975",
+      "recommendation": "REVIEW",
+      "score": 70.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-5ea8a395",
+      "recommendation": "REVIEW",
+      "score": 66.7,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-608164a6",
+      "recommendation": "CONTEST",
+      "score": 85.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-61136a57",
+      "recommendation": "INSUFFICIENT",
+      "score": 30.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-6499c50f",
+      "recommendation": "INSUFFICIENT",
+      "score": 36.5,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-77dbd873",
+      "recommendation": "REVIEW",
+      "score": 66.7,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-7eb43308",
+      "recommendation": "CONTEST",
+      "score": 85.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-83645805",
+      "recommendation": "INSUFFICIENT",
+      "score": 36.5,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-885954ca",
+      "recommendation": "REVIEW",
+      "score": 66.7,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-8a2bff57",
+      "recommendation": "INSUFFICIENT",
+      "score": 36.5,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-8c30788e",
+      "recommendation": "REVIEW",
+      "score": 66.7,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-902abbfd",
+      "recommendation": "INSUFFICIENT",
+      "score": 36.5,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-a4b8fdeb",
+      "recommendation": "INSUFFICIENT",
+      "score": 30.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-aa271a05",
+      "recommendation": "ABSTAIN",
+      "score": 5.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-ac4b4d97",
+      "recommendation": "CONTEST",
+      "score": 85.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-b27fe1ee",
+      "recommendation": "REVIEW",
+      "score": 55.0,
+      "contradictions": 2,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-b2c71e9e",
+      "recommendation": "REVIEW",
+      "score": 32.5,
+      "contradictions": 2,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-b80d22f5",
+      "recommendation": "REVIEW",
+      "score": 70.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-be11434b",
+      "recommendation": "CONTEST",
+      "score": 93.8,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-bf7fe10c",
+      "recommendation": "REVIEW",
+      "score": 70.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-c1d35ed4",
+      "recommendation": "ABSTAIN",
+      "score": 6.2,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-c4a405bb",
+      "recommendation": "CONTEST",
+      "score": 85.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-c899129e",
+      "recommendation": "CONTEST",
+      "score": 90.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-d4458931",
+      "recommendation": "ABSTAIN",
+      "score": 5.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-f4d60899",
+      "recommendation": "CONTEST",
+      "score": 90.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-f9112e3d",
+      "recommendation": "REVIEW",
+      "score": 70.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-f945836a",
+      "recommendation": "CONTEST",
+      "score": 90.0,
+      "contradictions": 0,
+      "injection": false
+    },
+    {
+      "case_id": "CASE-fe378cac",
+      "recommendation": "REVIEW",
+      "score": 70.0,
+      "contradictions": 0,
+      "injection": false
+    }
+  ]
+}

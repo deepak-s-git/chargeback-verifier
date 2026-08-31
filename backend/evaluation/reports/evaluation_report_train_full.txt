@@ -1,0 +1,56 @@
+==============================================================================
+DisputeShield — Evaluation Report   (split=train, mode=full)
+==============================================================================
+
+Cases evaluated ............ 120
+Recommendation accuracy .... 100.0%
+Macro F1 ................... 100.0%  (P 100.0% / R 100.0%)
+Weighted F1 ................ 100.0%
+Majority-class baseline ....  43.3%  (always predict CONTEST)
+Score within expected range  100.0%  (120/120)
+
+Per-class recommendation metrics
+------------------------------------------------------------------------------
+class           precision     recall         f1   support
+CONTEST            100.0%     100.0%     100.0%        52
+REVIEW             100.0%     100.0%     100.0%        45
+INSUFFICIENT       100.0%     100.0%     100.0%        16
+ABSTAIN            100.0%     100.0%     100.0%         7
+
+Confusion matrix  (rows = ground truth, cols = predicted)
+------------------------------------------------------------------------------
+gt \ pred          CONTEST      REVIEW  INSUFFICIE     ABSTAIN
+CONTEST                 52           0           0           0
+REVIEW                   0          45           0           0
+INSUFFICIENT             0           0          16           0
+ABSTAIN                  0           0           0           7
+
+Contradiction detection (any vs none)
+------------------------------------------------------------------------------
+  precision 100.0%   recall 100.0%   f1 100.0%   exact-count acc 100.0%
+  tp 14  fp 0  fn 0  (positives in split: 14)
+
+Prompt-injection detection
+------------------------------------------------------------------------------
+  precision 100.0%   recall 100.0%   f1 100.0%
+  tp 5  fp 0  fn 0  (positives in split: 5)
+Per-archetype accuracy
+------------------------------------------------------------------------------
+archetype                  correct   total   accuracy
+adversarial_injection            5       5     100.0%
+contradictory                   14      14     100.0%
+insufficient_minimal             7       7     100.0%
+moderate_gaps                   19      19     100.0%
+noisy_ocr                        7       7     100.0%
+strong_3ds                       9       9     100.0%
+strong_ce30                     14      14     100.0%
+strong_complete                 29      29     100.0%
+weak_insufficient               16      16     100.0%
+
+Recommendation confusion pairs (errors only)
+------------------------------------------------------------------------------
+  (none — every case landed in the correct band)
+
+Score-out-of-range cases ... 0
+Contradiction misses ....... 0
+Injection misses ........... 0
