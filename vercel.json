@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "BACKEND_URL_PLACEHOLDER/api/:path*"
+      "destination": "https://chargeback-verifier.onrender.com/api/:path*"
     },
     {
       "source": "/(.*)",
