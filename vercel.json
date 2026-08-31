@@ -3,10 +3,6 @@
     {
       "source": "/api/:path*",
       "destination": "https://chargeback-verifier.onrender.com/api/:path*"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ]
 }
